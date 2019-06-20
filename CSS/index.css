@@ -122,6 +122,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.header-container {
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+}
+header {
+  background: #b1b1b1;
+}
+header .header-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0px;
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header .header-container p {
+  font-size: 1.5rem;
+}
+header .header-container nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header .header-container nav a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+.main-page-greeting {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+.main-page-greeting .top-content {
+  width: 49%;
+}
+.main-page-greeting .top-content h1 {
+  font-size: 4rem;
 }
