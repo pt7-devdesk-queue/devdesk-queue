@@ -122,59 +122,87 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
+*,
+:before,
+:after {
   box-sizing: border-box;
 }
 body {
   font-size: 62.5%;
 }
-header {
-  background: #b1b1b1;
-}
-header .header-container {
-  width: 70%;
+.header-container {
+  position: fixed;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 20px 12.5%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  text-align: center;
+  background: transparent;
+  z-index: 30;
 }
-header .header-container h1 {
+.header-container h1 {
   font-size: 1.5rem;
 }
-header .header-container nav {
+.header-container nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
-header .header-container nav a {
+.header-container nav a {
   text-decoration: none;
   font-size: 1rem;
 }
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
 .main-page-greeting {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  padding: 25px 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 175px 15px;
+  height: 100%;
+  z-index: 0;
+}
+.main-page-greeting::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.main-page-greeting .top-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.main-page-greeting .top-background img {
+  width: 100vw;
+  height: 100vh;
 }
 .main-page-greeting .top-content {
-  width: 49%;
-}
-.main-page-greeting .top-left-text {
+  width: 800px;
   padding: 100px 0px;
+  z-index: 1;
 }
-.main-page-greeting .top-left-text h2 {
+.main-page-greeting .top-content h2 {
   font-size: 4rem;
 }
-.main-page-greeting .top-left-text p {
+.main-page-greeting .top-content p {
   padding: 20px 0px;
   font-size: 1.25rem;
   line-height: 25px;
 }
-.main-page-greeting .top-left-text button {
+.main-page-greeting .top-content button {
   font-size: 1.25rem;
   padding: 7px 15px;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
