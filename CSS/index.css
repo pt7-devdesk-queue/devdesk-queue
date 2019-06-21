@@ -141,7 +141,6 @@ body {
   text-align: center;
   background: #eeeeee;
   color: #000000;
-  box-shadow: inset 0 -4px 5px -3px rgba(0, 255, 0, 0.32);
   transition: 0.5s;
   z-index: 30;
 }
@@ -159,7 +158,7 @@ body {
   color: #000000;
 }
 .nav-fixed-change {
-  background: rgba(255, 255, 255, 0.911);
+  background: rgba(128, 128, 128, 0.911);
   color: #2a2a83;
   box-shadow: 0 2px 3px 2px rgba(34, 34, 34, 0.56);
 }
@@ -205,7 +204,7 @@ body {
 }
 .what-we-do {
   width: 50%;
-  padding: 25px 2%;
+  padding: 40px 2%;
   margin-top: -115px;
   border-radius: 25px;
   background: white;
@@ -213,9 +212,26 @@ body {
   z-index: 2;
 }
 .what-we-do h2 {
-  font-size: 1.5rem;
-  padding-bottom: 10px;
+  font-size: 1.75rem;
+  padding-bottom: 20px;
 }
 .what-we-do p {
-  font-size: 1rem;
+  font-size: 1.3rem;
+}
+.team-management {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  padding: 50px 0px;
+}
+.team-management .teamwork {
+  width: 45%;
+  padding: 20px 10px;
+}
+.team-management .teamwork h3 {
+  font-size: 1.75rem;
+  padding-bottom: 15px;
+}
+.team-management .teamwork p {
+  font-size: 1.25rem;
 }
