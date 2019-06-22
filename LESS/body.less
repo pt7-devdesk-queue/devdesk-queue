@@ -10,10 +10,10 @@
     display: flex;
     justify-content: center;
     padding: 150px 12.5%;
-    background: url(../assets/buildings.jpeg);
+    background: url(../assets/blur.jpg);
     background-repeat: no-repeat;
-    background-size: auto 110vw;
-    background-position: bottom;
+    background-size: auto 100vw;
+    background-position: 45% 75%;
     z-index: 1;
 
     .top-content {
@@ -27,6 +27,8 @@
             font-size: 4rem;
             font-family: @bitter;
             white-space: nowrap;
+            color: white;
+            text-shadow: 2px 2px 4px black;
         }
 
         p {
@@ -35,6 +37,8 @@
             line-height: 25px;
             text-align: center;
             font-family: @ubuntu;
+            color: white;
+            text-shadow: 2px 2px 4px black;
         }
 
         button {
@@ -46,11 +50,12 @@
             background: rgb(106, 33, 190);
             color: white;
             box-shadow: 0px 2px 3px 2px rgb(155, 148, 199);
-            transition: .4s;
+            transition: .2s;
             font-family: @ubuntu;
 
             &:hover {
-                background: rgb(33, 190, 67);
+                background: rgb(0, 235, 51);
+                color: rgb(0, 0, 170);
                 box-shadow: 0px 1px 1px 1px rgb(89, 85, 114);
             }
         }
