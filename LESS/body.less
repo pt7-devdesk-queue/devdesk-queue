@@ -11,7 +11,6 @@
     justify-content: center;
     padding: 150px 12.5%;
     background: url(../assets/buildings.jpeg);
-    // background: rgb(104, 0, 104);
     background-repeat: no-repeat;
     background-size: auto 110vw;
     background-position: bottom;
@@ -26,6 +25,8 @@
 
         h2 {
             font-size: 4rem;
+            font-family: @bitter;
+            white-space: nowrap;
         }
 
         p {
@@ -33,6 +34,7 @@
             font-size: 1.25rem;
             line-height: 25px;
             text-align: center;
+            font-family: @ubuntu;
         }
 
         button {
@@ -44,6 +46,13 @@
             background: rgb(106, 33, 190);
             color: white;
             box-shadow: 0px 2px 3px 2px rgb(155, 148, 199);
+            transition: .4s;
+            font-family: @ubuntu;
+
+            &:hover {
+                background: rgb(33, 190, 67);
+                box-shadow: 0px 1px 1px 1px rgb(89, 85, 114);
+            }
         }
     }
 }
@@ -60,10 +69,12 @@
     h2 {
         font-size: 1.75rem;
         padding-bottom: 20px;
+        font-family: @bitter;
     }
 
     p {
         font-size: 1.3rem;
+        font-family: @ubuntu;
     }
 
 }
@@ -72,20 +83,23 @@
     display: flex;
     justify-content: space-evenly;
     width: 75%;
-    padding: 50px 0px 0px;
+    padding: 25px 0px 0px;
 
     .teamwork {
         width: 45%;
         padding: 20px 0px 0px;
 
         h3 {
-            font-size: 1.75rem;
+            font-size: 1.65rem;
             padding-bottom: 15px;
+            font-family: @bitter;
         }
 
         p {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             padding: 15px 0px;
+            font-family: @ubuntu;
+            line-height: 25px;
         }
 
         p:nth-child(odd) {
@@ -114,12 +128,15 @@
     padding: 0px 40px 25px;
 
     h3 {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
         padding-bottom: 15px;
+        font-family: @bitter;
     }
 
     p {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         padding: 15px 0px;
+        font-family: @ubuntu;
+        line-height: 25px;
     }
 }

@@ -147,6 +147,7 @@ body {
 .header-container h1 {
   font-size: 2rem;
   margin-right: 350px;
+  font-family: 'Roboto Slab', serif;
 }
 .header-container nav {
   width: 50%;
@@ -158,6 +159,7 @@ body {
   font-size: 1rem;
   visibility: hidden;
   white-space: nowrap;
+  font-family: 'Ubuntu', sans-serif;
 }
 .nav-fixed-change {
   background: #6459ff;
@@ -231,12 +233,15 @@ body {
 }
 .main-page-greeting .top-content h2 {
   font-size: 4rem;
+  font-family: 'Bitter', serif;
+  white-space: nowrap;
 }
 .main-page-greeting .top-content p {
   padding: 20px 0px;
   font-size: 1.25rem;
   line-height: 25px;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 .main-page-greeting .top-content button {
   font-size: 1.25rem;
@@ -247,6 +252,12 @@ body {
   background: #6a21be;
   color: white;
   box-shadow: 0px 2px 3px 2px #9b94c7;
+  transition: 0.4s;
+  font-family: 'Ubuntu', sans-serif;
+}
+.main-page-greeting .top-content button:hover {
+  background: #21be43;
+  box-shadow: 0px 1px 1px 1px #595572;
 }
 .what-we-do {
   width: 50%;
@@ -260,27 +271,32 @@ body {
 .what-we-do h2 {
   font-size: 1.75rem;
   padding-bottom: 20px;
+  font-family: 'Bitter', serif;
 }
 .what-we-do p {
   font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 .team-management {
   display: flex;
   justify-content: space-evenly;
   width: 75%;
-  padding: 50px 0px 0px;
+  padding: 25px 0px 0px;
 }
 .team-management .teamwork {
   width: 45%;
   padding: 20px 0px 0px;
 }
 .team-management .teamwork h3 {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   padding-bottom: 15px;
+  font-family: 'Bitter', serif;
 }
 .team-management .teamwork p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   padding: 15px 0px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 25px;
 }
 .team-management .teamwork p:nth-child(odd) {
   border-top: 1px dashed slateblue;
@@ -303,12 +319,15 @@ body {
   padding: 0px 40px 25px;
 }
 .solve-your-issues h3 {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   padding-bottom: 15px;
+  font-family: 'Bitter', serif;
 }
 .solve-your-issues p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   padding: 15px 0px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 25px;
 }
 footer {
   background: #8294a5;
@@ -323,6 +342,7 @@ footer .footer-nav a {
   padding: 20px 1%;
   font-size: 1rem;
   white-space: nowrap;
+  color: #002d57;
 }
 footer .small-footer {
   background: #404952;
