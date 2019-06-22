@@ -144,11 +144,38 @@ body {
   transition: 0.3s;
   z-index: 30;
 }
+@media (max-width: 1300px) {
+  .header-container {
+    padding: 20px 6%;
+  }
+}
+@media (max-width: 850px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header-container h1 {
   font-size: 2rem;
   margin-right: 350px;
   font-family: 'Roboto Slab', serif;
   color: white;
+}
+@media (max-width: 1300px) {
+  .header-container h1 {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .header-container h1 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 850px) {
+  .header-container h1 {
+    font-size: 3.5rem;
+    padding-bottom: 15px;
+  }
 }
 .header-container .devDesk-Shadow {
   text-shadow: 2px 2px 4px black;
@@ -158,6 +185,11 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 1300px) {
+  .header-container nav {
+    width: 100%;
+  }
+}
 .header-container nav a {
   text-decoration: none;
   font-size: 1rem;
@@ -165,6 +197,11 @@ body {
   white-space: nowrap;
   font-family: 'Ubuntu', sans-serif;
   color: white;
+}
+@media (max-width: 850px) {
+  .header-container nav a {
+    visibility: visible;
+  }
 }
 .nav-fixed-change {
   background: #6459ff;
@@ -194,6 +231,13 @@ body {
   display: block;
   height: 5px;
   margin: 7px 0;
+}
+@media (max-width: 850px) {
+  .hamburger-menu:after,
+  .hamburger-menu:before,
+  .hamburger-menu div {
+    display: none;
+  }
 }
 .hamburger-menu-scroll {
   transition: 0s;
