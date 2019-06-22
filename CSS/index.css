@@ -139,13 +139,14 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: #eeeeee;
+  background: transparent;
   color: #000000;
-  transition: 0.5s;
+  transition: 0.3s;
   z-index: 30;
 }
 .header-container h1 {
   font-size: 2rem;
+  margin-right: 350px;
 }
 .header-container nav {
   width: 50%;
@@ -155,15 +156,49 @@ body {
 .header-container nav a {
   text-decoration: none;
   font-size: 1rem;
-  color: #000000;
+  visibility: hidden;
+  white-space: nowrap;
 }
 .nav-fixed-change {
-  background: #eeeeee;
-  color: #2a2a83;
+  background: #6459ff;
+  color: whitesmoke;
   box-shadow: 0 2px 4px 1px rgba(34, 34, 34, 0.32);
 }
 .nav-fixed-change nav a {
-  color: black;
+  visibility: visible;
+  color: whitesmoke;
+}
+.hamburger-menu {
+  width: 30px;
+}
+.hamburger-menu:after,
+.hamburger-menu:before,
+.hamburger-menu div {
+  background-color: #000000;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+}
+.hamburger-menu-scroll {
+  transition: 0s;
+  visibility: hidden;
+  z-index: 0;
+}
+.hamburger-open-timing:after,
+.hamburger-open-timing:before,
+.hamburger-open-timing div {
+  transition: all 0.2s ease-in-out;
+}
+.hamburger-menu-click:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.hamburger-menu-click:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.hamburger-menu-click div {
+  transform: scale(0);
 }
 .container {
   display: flex;
