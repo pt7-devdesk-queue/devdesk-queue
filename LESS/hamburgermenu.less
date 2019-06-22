@@ -1,0 +1,51 @@
+
+.hamburger-menu {
+    width: 30px;
+    cursor: pointer;
+
+    &:after,
+    &:before,
+    div {
+        background-color: rgb(0, 0, 0);
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 5px;
+        margin: 7px 0;
+    }
+}
+
+// Hamburger menu disappearing on scroll
+.hamburger-menu-scroll {
+    transition: 0s;
+    visibility: hidden;
+    z-index: 0;
+}
+
+//Hamburger timing
+
+.hamburger-open-timing {
+
+    &:after,
+    &:before,
+    div {
+        transition: all .2s ease-in-out;
+    }
+}
+
+//Hamburger menu open on click
+.hamburger-menu-click {
+
+    &:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+
+    &:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
+    & div {
+        transform: scale(0);
+    }
+
+}

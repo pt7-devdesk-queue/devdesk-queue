@@ -168,8 +168,13 @@ body {
   visibility: visible;
   color: whitesmoke;
 }
+.nav-hamburger-clicked nav a {
+  visibility: visible;
+  color: black;
+}
 .hamburger-menu {
   width: 30px;
+  cursor: pointer;
 }
 .hamburger-menu:after,
 .hamburger-menu:before,
@@ -211,7 +216,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 150px 12.5%;
-  background: url(/assets/buildings.jpeg);
+  background: url(../assets/buildings.jpeg);
   background-repeat: no-repeat;
   background-size: auto 110vw;
   background-position: bottom;
@@ -247,7 +252,7 @@ body {
   width: 50%;
   padding: 40px 2%;
   margin-top: -100px;
-  border-radius: 25px;
+  border-radius: 25px 0px 25px 0px;
   background: white;
   box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
   z-index: 2;
@@ -263,11 +268,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 75%;
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
 }
 .team-management .teamwork {
   width: 45%;
-  padding: 20px 10px;
+  padding: 20px 0px 0px;
 }
 .team-management .teamwork h3 {
   font-size: 1.75rem;
@@ -275,6 +280,35 @@ body {
 }
 .team-management .teamwork p {
   font-size: 1.25rem;
+  padding: 15px 0px;
+}
+.team-management .teamwork p:nth-child(odd) {
+  border-top: 1px dashed slateblue;
+  border-bottom: 1px dashed slateblue;
+}
+.bottom-image {
+  background: url(../assets/teams.jpg);
+  padding: 150px;
+  margin: 30px 0px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: auto 50vw;
+  background-position: center;
+  width: 75%;
+  height: auto;
+  border-radius: 0px 25px 0px 25px;
+}
+.solve-your-issues {
+  width: 75%;
+  padding: 0px 40px 25px;
+}
+.solve-your-issues h3 {
+  font-size: 1.75rem;
+  padding-bottom: 15px;
+}
+.solve-your-issues p {
+  font-size: 1.25rem;
+  padding: 15px 0px;
 }
 footer {
   background: #8294a5;
