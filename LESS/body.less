@@ -1,0 +1,147 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-page-greeting {
+    display: flex;
+    justify-content: center;
+    padding: 150px 12.5%;
+    background: url(../assets/blur.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100vw;
+    background-position: 45% 75%;
+    z-index: 1;
+
+    .top-content {
+        width: 75%;
+        padding: 50px 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h2 {
+            font-size: 4rem;
+            font-family: @bitter;
+            white-space: nowrap;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        p {
+            padding: 20px 0px;
+            font-size: 1.25rem;
+            line-height: 25px;
+            text-align: center;
+            font-family: @ubuntu;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        button {
+            font-size: 1.25rem;
+            padding: 5px 15px;
+            border: 0px;
+            border-radius: 20px;
+            cursor: pointer;
+            background: rgb(106, 33, 190);
+            color: white;
+            box-shadow: 0px 2px 3px 2px rgb(155, 148, 199);
+            transition: .2s;
+            font-family: @ubuntu;
+
+            &:hover {
+                background: rgb(0, 235, 51);
+                color: rgb(0, 0, 170);
+                box-shadow: 0px 1px 1px 1px rgb(89, 85, 114);
+            }
+        }
+    }
+}
+
+.what-we-do {
+    width: 50%;
+    padding: 40px 2%;
+    margin-top: -100px;
+    border-radius: 25px 0px 25px 0px;
+    background: white;
+    box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
+    z-index: 2;
+
+    h2 {
+        font-size: 1.75rem;
+        padding-bottom: 20px;
+        font-family: @bitter;
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-family: @ubuntu;
+    }
+
+}
+
+.team-management {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    padding: 25px 0px 0px;
+
+    .teamwork {
+        width: 45%;
+        padding: 20px 0px 0px;
+
+        h3 {
+            font-size: 1.65rem;
+            padding-bottom: 15px;
+            font-family: @bitter;
+        }
+
+        p {
+            font-size: 1.15rem;
+            padding: 15px 0px;
+            font-family: @ubuntu;
+            line-height: 25px;
+        }
+
+        p:nth-child(odd) {
+            border-top: 1px dashed slateblue;
+            border-bottom: 1px dashed slateblue;
+        }
+    }
+}
+
+
+.bottom-image {
+    background: url(../assets/teams.jpg);
+    padding: 150px;
+    margin: 30px 0px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 50vw;
+    background-position: center;
+    width: 75%;
+    height: auto;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.solve-your-issues {
+    width: 75%;
+    padding: 0px 40px 25px;
+
+    h3 {
+        font-size: 1.65rem;
+        padding-bottom: 15px;
+        font-family: @bitter;
+    }
+
+    p {
+        font-size: 1.15rem;
+        padding: 15px 0px;
+        font-family: @ubuntu;
+        line-height: 25px;
+    }
+}

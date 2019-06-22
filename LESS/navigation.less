@@ -1,0 +1,69 @@
+.header-container {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 12.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    color: rgb(0, 0, 0);
+
+    transition: .3s;
+
+    z-index: 30;
+
+    h1 {
+        font-size: 2rem;
+        margin-right: 350px;
+        font-family: @roboto;
+        color: white;
+    }
+
+    .devDesk-Shadow {
+        text-shadow: 2px 2px 4px black;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+            visibility: hidden;
+            white-space: nowrap;
+            font-family: @ubuntu;
+            color: white;
+        }
+    }
+}
+
+.nav-fixed-change {
+    background: rgb(100, 89, 255);
+    color: whitesmoke;
+    box-shadow: 0 2px 4px 1px rgba(34, 34, 34, 0.32);
+
+    nav {
+
+        a {
+            visibility: visible;
+            color: whitesmoke;
+        }
+    }
+}
+
+.nav-hamburger-clicked {
+
+    nav {
+
+        a {
+            visibility: visible;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+
+        }
+    }
+}
