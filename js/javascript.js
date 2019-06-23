@@ -1,4 +1,4 @@
-//Hamburger Menu transitions and functions
+//Navigation and Hamburger Menu transitions and functions
 document.addEventListener("scroll", () => {
     const nav = document.querySelector('.header-container');
     const hamburger = document.querySelector('.hamburger-menu');
