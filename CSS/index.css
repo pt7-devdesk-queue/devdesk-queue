@@ -155,6 +155,12 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 600px) {
+  .header-container {
+    background: #6459ff;
+    padding: 5px 6%;
+  }
+}
 .header-container h1 {
   font-size: 2rem;
   margin-right: 350px;
@@ -177,6 +183,11 @@ body {
     padding-bottom: 15px;
   }
 }
+@media (max-width: 600px) {
+  .header-container h1 {
+    padding: 15px 0px;
+  }
+}
 .header-container .devDesk-Shadow {
   text-shadow: 2px 2px 4px black;
 }
@@ -190,6 +201,12 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .header-container nav {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+}
 .header-container nav a {
   text-decoration: none;
   font-size: 1rem;
@@ -201,6 +218,13 @@ body {
 @media (max-width: 850px) {
   .header-container nav a {
     visibility: visible;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+@media (max-width: 600px) {
+  .header-container nav a {
+    display: none;
+    padding: 3px 0px;
   }
 }
 .nav-fixed-change {
@@ -212,14 +236,41 @@ body {
   visibility: visible;
   color: whitesmoke;
 }
+@media (max-width: 600px) {
+  .nav-fixed-change nav a {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .nav-hamburger-clicked {
+    background: #6459ff;
+  }
+}
+@media (max-width: 600px) {
+  .nav-hamburger-clicked nav {
+    order: 2;
+  }
+}
 .nav-hamburger-clicked nav a {
   visibility: visible;
   color: white;
   text-shadow: 2px 2px 4px black;
 }
+@media (max-width: 600px) {
+  .nav-hamburger-clicked nav a {
+    display: block;
+  }
+}
 .hamburger-menu {
   width: 30px;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .hamburger-menu {
+    position: fixed;
+    right: 15px;
+    top: 30px;
+  }
 }
 .hamburger-menu:after,
 .hamburger-menu:before,
@@ -237,6 +288,13 @@ body {
   .hamburger-menu:before,
   .hamburger-menu div {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  .hamburger-menu:after,
+  .hamburger-menu:before,
+  .hamburger-menu div {
+    display: block;
   }
 }
 .hamburger-menu-scroll {
@@ -274,6 +332,11 @@ body {
   background-size: auto 100vw;
   background-position: 45% 75%;
   z-index: 1;
+}
+@media (max-width: 650px) {
+  .main-page-greeting {
+    background-attachment: fixed;
+  }
 }
 .main-page-greeting .top-content {
   width: 75%;

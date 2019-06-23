@@ -3,18 +3,21 @@ document.addEventListener("scroll", () => {
     const nav = document.querySelector('.header-container');
     const hamburger = document.querySelector('.hamburger-menu');
     const devDeskLogo = document.querySelector('.header-container h1');
-    if (this.scrollY >= 150) {
-        hamburger.classList.remove('hamburger-open-timing');
-        nav.classList.add('nav-fixed-change');
-        hamburger.classList.add('hamburger-menu-scroll');
-        nav.classList.remove('nav-hamburger-clicked');
-        hamburger.classList.remove('hamburger-menu-click');
-        devDeskLogo.classList.remove('devDesk-Shadow');
-    } else {
-        nav.classList.remove('nav-fixed-change');
-        hamburger.classList.remove('hamburger-menu-scroll');
-        hamburger.classList.add('hamburger-open-timing');
-        devDeskLogo.classList.add('devDesk-Shadow');
+    const mq = window.matchMedia("(max-width: 600px)");
+    if (!mq.matches){
+        if (this.scrollY >= 150) {
+            hamburger.classList.remove('hamburger-open-timing');
+            nav.classList.add('nav-fixed-change');
+            hamburger.classList.add('hamburger-menu-scroll');
+            nav.classList.remove('nav-hamburger-clicked');
+            hamburger.classList.remove('hamburger-menu-click');
+            devDeskLogo.classList.remove('devDesk-Shadow');
+        } else {
+            nav.classList.remove('nav-fixed-change');
+            hamburger.classList.remove('hamburger-menu-scroll');
+            hamburger.classList.add('hamburger-open-timing');
+            devDeskLogo.classList.add('devDesk-Shadow');
+        }
     }
 });
 const hamburgerIcon = document.querySelector('.hamburger-menu');
