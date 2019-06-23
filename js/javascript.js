@@ -33,13 +33,15 @@ const hamburgerIcon = document.querySelector('.hamburger-menu');
 hamburgerIcon.addEventListener('click', () => {
     const hamburger = document.querySelector('.hamburger-menu');
     const nav = document.querySelector('.header-container');
-
-    if (!hamburger.classList.contains('hamburger-menu-click')) {
-        hamburger.classList.add('hamburger-menu-click');
-        nav.classList.add('nav-hamburger-clicked');
-    } else if (hamburger.classList.contains('hamburger-menu-click')) {
-        hamburger.classList.remove('hamburger-menu-click');
-        nav.classList.remove('nav-hamburger-clicked');
+    switch (true) {
+        case !hamburger.classList.contains('hamburger-menu-click'):
+            hamburger.classList.add('hamburger-menu-click');
+            nav.classList.add('nav-hamburger-clicked');
+            break;
+        case hamburger.classList.contains('hamburger-menu-click'):
+            hamburger.classList.remove('hamburger-menu-click');
+            nav.classList.remove('nav-hamburger-clicked');
+            break;
     }
 });
 ///End Hamburger Menu
