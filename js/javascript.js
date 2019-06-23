@@ -3,7 +3,7 @@ document.addEventListener("scroll", () => {
     const nav = document.querySelector('.header-container');
     const hamburger = document.querySelector('.hamburger-menu');
     const devDeskLogo = document.querySelector('.header-container h1');
-    const mq = window.matchMedia("(max-width: 600px)");
+    const mq = window.matchMedia("(max-width: 850px)");
     if (!mq.matches) {
         if (this.scrollY >= 150) {
             hamburger.classList.remove('hamburger-open-timing');
