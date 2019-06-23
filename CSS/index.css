@@ -336,6 +336,7 @@ body {
 @media (max-width: 650px) {
   .main-page-greeting {
     background-attachment: fixed;
+    background-size: cover;
   }
 }
 .main-page-greeting .top-content {
