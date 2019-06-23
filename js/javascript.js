@@ -18,12 +18,13 @@ document.addEventListener("scroll", () => {
             hamburger.classList.add('hamburger-open-timing');
             devDeskLogo.classList.add('devDesk-Shadow');
         }
-    } 
+    }
 });
 window.addEventListener('resize', () => {
     const nav = document.querySelector('.header-container');
     const hamburger = document.querySelector('.hamburger-menu');
     const yOffset = window.pageYOffset;
+    const devDeskLogo = document.querySelector('.header-container h1');
     if (this.innerWidth < 600) {
         console.log(yOffset);
         nav.classList.remove('nav-fixed-change');
@@ -31,6 +32,10 @@ window.addEventListener('resize', () => {
     } else if (this.innerWidth > 600) {
         if (yOffset >= 150) {
             nav.classList.add('nav-fixed-change');
+            hamburger.classList.add('hamburger-menu-scroll');
+            nav.classList.remove('nav-hamburger-clicked');
+            hamburger.classList.remove('hamburger-menu-click');
+            devDeskLogo.classList.remove('devDesk-Shadow');
         }
     }
 });
