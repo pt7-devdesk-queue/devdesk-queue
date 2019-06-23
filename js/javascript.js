@@ -26,7 +26,6 @@ window.addEventListener('resize', () => {
     const yOffset = window.pageYOffset;
     const devDeskLogo = document.querySelector('.header-container h1');
     if (this.innerWidth < 600) {
-        console.log(yOffset);
         nav.classList.remove('nav-fixed-change');
         hamburger.classList.remove('hamburger-menu-scroll');
     } else if (this.innerWidth > 600) {
