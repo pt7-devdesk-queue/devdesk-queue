@@ -166,7 +166,6 @@ body {
   font-size: 2rem;
   margin-right: 350px;
   font-family: 'Roboto Slab', serif;
-  color: white;
 }
 @media (max-width: 1300px) {
   .header-container h1 {
@@ -188,6 +187,10 @@ body {
   .header-container h1 {
     padding: 15px 0px;
   }
+}
+.header-container h1 a {
+  text-decoration: none;
+  color: white;
 }
 .header-container .devDesk-Shadow {
   text-shadow: 2px 2px 4px black;
