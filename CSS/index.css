@@ -610,10 +610,20 @@ footer .footer-nav a {
   white-space: nowrap;
   color: #002d57;
 }
+@media (max-width: 600px) {
+  footer .footer-nav a {
+    font-size: 0.8rem;
+  }
+}
 footer .small-footer {
   background: #404952;
   color: #8294a5;
   text-align: center;
   padding: 15px 0px;
   font-size: 0.8rem;
+}
+@media (max-width: 600px) {
+  footer .small-footer {
+    font-size: 0.65rem;
+  }
 }
