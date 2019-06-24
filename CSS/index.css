@@ -398,10 +398,10 @@ body {
   font-size: 1.25rem;
   padding: 5px 15px;
   border: 0px;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
-  background: #6a21be;
-  color: white;
+  background: #6459ff;
+  color: whitesmoke;
   box-shadow: 0px 2px 3px 2px #9b94c7;
   transition: 0.2s;
   font-family: 'Ubuntu', sans-serif;
@@ -412,9 +412,9 @@ body {
   }
 }
 .main-page-greeting .top-content button:hover {
-  background: #00eb33;
-  color: #0000aa;
-  box-shadow: 0px 1px 1px 1px #595572;
+  background: white;
+  color: #6459ff;
+  box-shadow: 0px 1px 2px 1px #595572;
 }
 .what-we-do {
   width: 50%;
