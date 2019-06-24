@@ -363,3 +363,80 @@ footer .small-footer {
   padding: 15px 0px;
   font-size: 0.8rem;
 }
+.demo {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+.demo-header {
+  color: white;
+  font-size: 1.5rem;
+  background-color: dodgerblue;
+  display: block;
+  padding-left: 150px;
+}
+.demo-header a {
+  text-decoration: none;
+}
+.demo-header h1 {
+  font-size: 2rem;
+  color: black;
+  padding-bottom: 20px;
+}
+.demo-header p {
+  line-height: 30px;
+}
+.demo-request-top {
+  display: flex;
+  background-color: dodgerblue;
+}
+.demo-request-top .demo-first {
+  width: 51%;
+}
+.demo-request-top .demo-second {
+  background-color: white;
+  font-size: 1rem;
+  width: 170px;
+  height: 50px;
+}
+.demo-content {
+  display: flex;
+  padding-left: 150px;
+}
+.demo-content .demo-cta {
+  font-size: 1rem;
+}
+.demo-content .demo-features {
+  font-size: 1.5rem;
+  width: 49%;
+  line-height: 25px;
+  margin-top: 40px;
+}
+.demo-content .demo-features h3 {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.demo-content .demo-features p {
+  line-height: 55px;
+}
+.demo-content .demo-form {
+  font-size: 1rem;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.demo-content .demo-form p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+.demo-content .demo-form input {
+  height: 35px;
+  width: 200px;
+  font-size: 1rem;
+}
+.demo-content .demo-form button {
+  margin-top: 25px;
+  width: 200px;
+  height: 35px;
+}
