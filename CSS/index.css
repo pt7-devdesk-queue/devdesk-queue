@@ -425,7 +425,7 @@ footer .small-footer {
   margin-left: 25px;
 }
 .demo-content .demo-form p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-top: 15px;
   margin-bottom: 2px;
@@ -439,4 +439,5 @@ footer .small-footer {
   margin-top: 25px;
   width: 200px;
   height: 35px;
+  background-color: chartreuse;
 }
