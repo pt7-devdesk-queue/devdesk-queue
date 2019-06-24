@@ -25,7 +25,7 @@ window.addEventListener('resize', () => {
     const hamburger = document.querySelector('.hamburger-menu');
     const yOffset = window.pageYOffset;
     const devDeskLogo = document.querySelector('.header-container h1');
-    if (this.innerWidth < 600) {
+    if (this.innerWidth <= 600) {
         nav.classList.remove('nav-fixed-change');
         hamburger.classList.remove('hamburger-menu-scroll');
     } else if (this.innerWidth > 600) {
