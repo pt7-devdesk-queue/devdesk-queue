@@ -54,4 +54,8 @@ hamburgerIcon.addEventListener('click', () => {
             break;
     }
 });
-///End Hamburger Menu
+
+// removed ability to highlight logo
+const devDeskLogo = document.querySelector('#dev-desk-logo');
+devDeskLogo.style.userSelect = "none";
+///End Navivation / Hamburger menu JS
