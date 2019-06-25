@@ -607,6 +607,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+.solutions-heading .solutions-heading-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.solutions-heading .solutions-heading-text h2 {
+  font-size: 4rem;
+  color: whitesmoke;
+  padding: 15px 0px;
+  text-shadow: 2px 2px 2px rgba(42, 42, 42, 0.75), 3px 3px 6px rgba(42, 42, 42, 0.3);
+}
+.solutions-heading .solutions-heading-text p {
+  font-size: 1.75rem;
+  color: whitesmoke;
+  background: rgba(42, 42, 42, 0.6);
+  padding: 10px 15px;
+  box-shadow: 1px 2px 4px 1px rgba(42, 42, 42, 0.6);
+}
+.solutions-heading .solutions-heading-text button {
+  font-size: 1rem;
+  padding: 7px 14px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid rgba(103, 113, 255, 0.8);
+  background-clip: padding-box;
+  color: white;
+  background: rgba(103, 113, 255, 0.7);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.solutions-heading .solutions-heading-text button:hover {
+  background: rgba(103, 113, 255, 0.95);
+  border: 2px solid white;
+}
 footer {
   background: #8294a5;
 }
