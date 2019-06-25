@@ -59,3 +59,5 @@ hamburgerIcon.addEventListener('click', () => {
 const devDeskLogo = document.querySelector('#dev-desk-logo');
 devDeskLogo.style.userSelect = "none";
 ///End Navivation / Hamburger menu JS
+
+//Demo Page
