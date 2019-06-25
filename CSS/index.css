@@ -598,6 +598,15 @@ body {
     font-size: 1rem;
   }
 }
+.solutions-heading {
+  background: url(../assets/building.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   background: #8294a5;
 }
