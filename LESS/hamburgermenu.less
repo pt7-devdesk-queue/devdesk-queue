@@ -1,7 +1,12 @@
-
 .hamburger-menu {
     width: 30px;
     cursor: pointer;
+
+    @media @mobile600 {
+        position: fixed;
+        right: 15px;
+        top: 30px;
+    }
 
     &:after,
     &:before,
@@ -13,6 +18,14 @@
         display: block;
         height: 5px;
         margin: 7px 0;
+
+        @media @tablet850 {
+            display: none;
+        }
+
+        @media @mobile600 {
+            display: block;
+        }
     }
 }
 

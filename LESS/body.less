@@ -16,6 +16,20 @@
     background-position: 45% 75%;
     z-index: 1;
 
+    @media @tablet750 {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    @media @tablet1000 {
+        padding: 150px 6%;
+    }
+
+    @media @mobile600 {
+        padding: 100px 6%;
+    }
+    
+
     .top-content {
         width: 75%;
         padding: 50px 1%;
@@ -23,12 +37,25 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        @media @tablet1000 {
+            width: 90%;
+        }
+
         h2 {
             font-size: 4rem;
             font-family: @bitter;
             white-space: nowrap;
             color: white;
             text-shadow: 2px 2px 4px black;
+
+            @media @tablet1000 {
+                white-space: normal;
+                text-align: center;
+            }
+
+            @media @mobile550 {
+                font-size: 3rem;
+            }
         }
 
         p {
@@ -39,24 +66,32 @@
             font-family: @ubuntu;
             color: white;
             text-shadow: 2px 2px 4px black;
+
+            @media @mobile550 {
+                font-size: 1rem;
+            }
         }
 
         button {
             font-size: 1.25rem;
             padding: 5px 15px;
             border: 0px;
-            border-radius: 20px;
+            border-radius: 5px;
             cursor: pointer;
-            background: rgb(106, 33, 190);
-            color: white;
+            background: rgb(100, 89, 255);
+            color: whitesmoke;
             box-shadow: 0px 2px 3px 2px rgb(155, 148, 199);
             transition: .2s;
             font-family: @ubuntu;
 
+            @media @mobile550 {
+                font-size: 1rem;
+            }
+
             &:hover {
-                background: rgb(0, 235, 51);
-                color: rgb(0, 0, 170);
-                box-shadow: 0px 1px 1px 1px rgb(89, 85, 114);
+                background: white;
+                color: rgb(100, 89, 255);
+                box-shadow: 0px 1px 2px 1px rgb(89, 85, 114);
             }
         }
     }
@@ -71,15 +106,31 @@
     box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
     z-index: 2;
 
+    @media @tablet1000 {
+        width: 90%;
+    }
+
+    @media @mobile650 {
+        text-align: center;
+    }
+
     h2 {
         font-size: 1.75rem;
         padding-bottom: 20px;
         font-family: @bitter;
+
+        @media @mobile550 {
+            font-size: 1.5rem;
+        }
     }
 
     p {
         font-size: 1.3rem;
         font-family: @ubuntu;
+
+        @media @mobile550 {
+            font-size: 1.15rem;
+        }
     }
 
 }
@@ -90,14 +141,32 @@
     width: 75%;
     padding: 25px 0px 0px;
 
+    @media @tablet1000 {
+        width: 90%;
+    }
+
+    @media @mobile650 {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .teamwork {
         width: 45%;
         padding: 20px 0px 0px;
+
+        @media @mobile650 {
+            width: 100%;
+            text-align: center
+        }
 
         h3 {
             font-size: 1.65rem;
             padding-bottom: 15px;
             font-family: @bitter;
+
+            @media @mobile550 {
+                font-size: 1.4rem;
+            }
         }
 
         p {
@@ -105,6 +174,10 @@
             padding: 15px 0px;
             font-family: @ubuntu;
             line-height: 25px;
+
+            @media @mobile550 {
+                font-size: 1rem;
+            }
         }
 
         p:nth-child(odd) {
@@ -126,22 +199,44 @@
     width: 75%;
     height: auto;
     border-radius: 0px 25px 0px 25px;
+
+    @media @tablet1000 {
+        width: 90%;
+        background-size: auto 75vw;
+    }
 }
 
 .solve-your-issues {
     width: 75%;
     padding: 0px 40px 25px;
 
+    @media @tablet1000 {
+        width: 90%;
+        padding: 0px;
+    }
+
+    @media @mobile650 {
+        text-align: center;
+    }
+
     h3 {
         font-size: 1.65rem;
         padding-bottom: 15px;
         font-family: @bitter;
+
+        @media @mobile550 {
+            font-size: 1.4rem;
+        }
     }
 
     p {
         font-size: 1.15rem;
-        padding: 15px 0px;
+        padding: 15px 0px 25px;
         font-family: @ubuntu;
         line-height: 25px;
+
+        @media @mobile550 {
+            font-size: 1rem;
+        }
     }
 }
