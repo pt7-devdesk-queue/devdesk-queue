@@ -625,7 +625,7 @@ body {
   padding: 10px 15px;
   box-shadow: 1px 2px 4px 1px rgba(42, 42, 42, 0.6);
 }
-.solutions-heading .solutions-heading-text button {
+.solutions-heading .solutions-heading-text a {
   font-size: 1rem;
   padding: 7px 14px;
   margin-top: 20px;
@@ -639,9 +639,20 @@ body {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.solutions-heading .solutions-heading-text button:hover {
+.solutions-heading .solutions-heading-text a:hover {
   background: rgba(103, 113, 255, 0.95);
   border: 2px solid white;
+}
+.container .tabs {
+  display: flex;
+  flex-direction: column;
+}
+.container .tabs h3 {
+  font-size: 4rem;
+}
+.container .tabs .business-solutions {
+  display: inherit;
+  justify-content: space-evenly;
 }
 footer {
   background: #8294a5;
