@@ -635,9 +635,6 @@ body {
   display: flex;
   padding-left: 150px;
 }
-.demo-content .demo-cta {
-  font-size: 1rem;
-}
 .demo-content .demo-features {
   font-size: 1.5rem;
   width: 49%;
@@ -650,6 +647,9 @@ body {
 }
 .demo-content .demo-features p {
   line-height: 55px;
+}
+.demo-content .demo-features .demo-cta {
+  font-size: 0.9rem;
 }
 .demo-content .demo-form {
   font-size: 1rem;
@@ -676,6 +676,14 @@ body {
   width: 200px;
   height: 35px;
   background-color: chartreuse;
+}
+.demo-content .demo-form .error {
+  color: red;
+  margin-top: 0px;
+  font-size: 0.7rem;
+}
+.demo-content .demo-form .hidden {
+  display: none;
 }
 .carousel {
   width: 100%;
