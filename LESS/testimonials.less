@@ -1,0 +1,90 @@
+.carousel {
+    width: 100%;
+    .flex(center, center);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-left: 100px;
+    @media(min-width: 1200px){
+      width: 1200px;
+    }
+    .left-button, .right-button {
+      .flex(center);
+      color: #fff;
+      background-color: #333;
+      font-size: 40px;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &:hover {
+        color: #333;
+        background-color: #fff;
+        border: 2px solid #333;
+      }
+    }
+    .left-button {
+      top: 50%; 
+      left: 25px;
+      transform: translate(0, -50%);
+    }
+    .right-button {
+      top: 50%; 
+      right: 25px;
+      transform: translate(0, -50%);
+    }         
+  
+}
+
+.testimonials-header {
+    color: white;
+    font-size: 1.5rem;
+    background-color: dodgerblue;
+    display: block;
+    padding-left: 150px; 
+    
+    a{
+        text-decoration: none;
+    }
+    
+    h1 {        
+        font-size: 2rem;
+        color: black;
+        padding-bottom: 20px;                       
+    }
+
+    p {
+        line-height: 30px;
+    }
+}
+
+.card {
+    padding-left: 170px;
+
+    img {
+        display: inline-block;
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;        
+        
+    }
+    .headline {
+        font-size: 2.0rem;
+        padding-bottom: 25px;
+        vertical-align: middle;
+    }
+    .test {
+        p {
+            font-size: 1.5rem;
+            width: 400px; 
+            padding-bottom: 25px; 
+            vertical-align: middle;          
+        }        
+    }
+    .author {
+        font-size: 1.8rem;
+    }
+}

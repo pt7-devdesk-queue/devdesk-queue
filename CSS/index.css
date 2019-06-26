@@ -662,6 +662,10 @@ body {
   margin-top: 15px;
   margin-bottom: 2px;
 }
+.demo-content .demo-form .nameError {
+  font-size: 0.5rem;
+  color: red;
+}
 .demo-content .demo-form input {
   height: 35px;
   width: 200px;
@@ -673,6 +677,95 @@ body {
   height: 35px;
   background-color: chartreuse;
 }
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-left: 100px;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.testimonials-header {
+  color: white;
+  font-size: 1.5rem;
+  background-color: dodgerblue;
+  display: block;
+  padding-left: 150px;
+}
+.testimonials-header a {
+  text-decoration: none;
+}
+.testimonials-header h1 {
+  font-size: 2rem;
+  color: black;
+  padding-bottom: 20px;
+}
+.testimonials-header p {
+  line-height: 30px;
+}
+.card {
+  padding-left: 170px;
+}
+.card img {
+  display: inline-block;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.card .headline {
+  font-size: 2rem;
+  padding-bottom: 25px;
+  vertical-align: middle;
+}
+.card .test p {
+  font-size: 1.5rem;
+  width: 400px;
+  padding-bottom: 25px;
+  vertical-align: middle;
+}
+.card .author {
+  font-size: 1.8rem;
 footer {
   background: #8294a5;
 }
