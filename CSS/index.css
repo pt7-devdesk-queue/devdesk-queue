@@ -614,6 +614,7 @@ body {
 }
 .solutions-heading .solutions-heading-text h2 {
   font-size: 4rem;
+  font-family: 'Bitter', serif;
   color: whitesmoke;
   padding: 15px 0px;
   text-shadow: 2px 2px 2px rgba(42, 42, 42, 0.75), 3px 3px 6px rgba(42, 42, 42, 0.3);
@@ -621,6 +622,7 @@ body {
 .solutions-heading .solutions-heading-text p {
   font-size: 1.75rem;
   color: whitesmoke;
+  font-family: 'Roboto Slab', serif;
   background: rgba(42, 42, 42, 0.6);
   padding: 10px 15px;
   box-shadow: 1px 2px 4px 1px rgba(42, 42, 42, 0.6);
@@ -643,16 +645,34 @@ body {
   background: rgba(103, 113, 255, 0.95);
   border: 2px solid white;
 }
-.container .tabs {
+.container .solution-boxes {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #0392ac;
 }
-.container .tabs h3 {
-  font-size: 4rem;
+.container .solution-boxes h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 25px 0px 50px;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  color: white;
 }
-.container .tabs .business-solutions {
+.container .solution-boxes .business-solutions {
+  width: 100%;
   display: inherit;
   justify-content: space-evenly;
+}
+.container .box-card {
+  background: white;
+  border: 0px;
+}
+.active-tab {
+  background-color: red;
+  color: white;
+  border: 2px solid green;
 }
 footer {
   background: #8294a5;

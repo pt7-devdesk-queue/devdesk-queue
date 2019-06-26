@@ -34,14 +34,25 @@
         </div>
     </section>
     <div class="container">
-        <div class="tabs">
-            <h3 id="company-solutions">Solutions</h3>
+        <div class="solution-boxes">
+            <h3 id="company-solutions">Explore Solutions</h3>
             <div class="business-solutions">
-                <div data-tab="express" class="tab">EXPRESS</div>
-                <div data-tab="action" class="tab">ACTION</div>
-                <div data-tab="enterprise" class="tab">ENTERPRISE</div>
+                <button data-box="implementation" class="solution-box">EXPRESS</button>
+                <button data-box="integration" class="solution-box">ACTION</button>
+                <button data-box="support" class="solution-box">ENTERPRISE</button>
             </div>
         </div>
+
+        <div class="box-card" data-box="implementation">
+            TEST1
+        </div>
+        <div class="box-card" data-box="integration">
+            TEST2
+        </div>
+        <div class="box-card" data-box="support">
+            TEST3
+        </div>
+
     </div>
     <footer>
         <nav class="footer-nav">
@@ -56,6 +67,7 @@
     </footer>
 
     <script type="text/javascript" src="../js/javascript.js"></script>
+    <script src="../js/solutionsdata.js"></script>
 </body>
 
 </html>
