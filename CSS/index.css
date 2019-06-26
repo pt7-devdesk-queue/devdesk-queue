@@ -629,21 +629,22 @@ body {
 }
 .solutions-heading .solutions-heading-text a {
   font-size: 1rem;
-  padding: 7px 14px;
+  padding: 9px 16px;
   margin-top: 20px;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  border: 2px solid rgba(103, 113, 255, 0.8);
   background-clip: padding-box;
-  color: white;
+  color: whitesmoke;
   background: rgba(103, 113, 255, 0.7);
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+  transition: ease-in-out 0.2s;
 }
 .solutions-heading .solutions-heading-text a:hover {
+  box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+  color: white;
   background: rgba(103, 113, 255, 0.95);
-  border: 2px solid white;
 }
 .container .solution-boxes {
   display: flex;
@@ -665,14 +666,14 @@ body {
   display: inherit;
   justify-content: space-evenly;
 }
-.container .box-card {
-  background: white;
-  border: 0px;
-}
-.active-tab {
+.container .active-box {
   background-color: red;
   color: white;
+  font-size: 3rem;
   border: 2px solid green;
+}
+.container .inactive-box {
+  display: none;
 }
 footer {
   background: #8294a5;

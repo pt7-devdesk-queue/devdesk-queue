@@ -10,7 +10,8 @@ class BoxLink {
         boxes.forEach(box => {
             box.style.display = "none";
         });
-        this.contentCards.style.display = "flex";
+        this.contentCards.style.display = "block";
+        this.contentCards.classList.add('active-box');
     }
 }
 let boxes = document.querySelectorAll('.solution-box');
