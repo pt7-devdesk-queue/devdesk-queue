@@ -1,9 +1,10 @@
+//Constructor and datasets for solutions
 class BoxLink {
     constructor(boxAttr) {
         this.boxAttr = boxAttr;
         this.boxData = this.boxAttr.dataset.box;
         this.contentCards = document.querySelector(`.box-card[data-box="${this.boxData}"]`);
-        this.boxAttr.addEventListener('click', () => this.selectBox());
+        this.boxAttr.addEventListener('mouseover', () => this.selectBox());
     }
     selectBox() {
         const boxes = document.querySelectorAll('.box-card');

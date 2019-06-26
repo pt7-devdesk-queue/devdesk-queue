@@ -33,27 +33,28 @@
             <a href="#company-solutions">Explore Solutions</a>
         </div>
     </section>
-    <div class="container">
+    <section class="container">
         <div class="solution-boxes">
             <h3 id="company-solutions">Explore Solutions</h3>
             <div class="business-solutions">
-                <button data-box="implementation" class="solution-box">EXPRESS</button>
-                <button data-box="integration" class="solution-box">ACTION</button>
-                <button data-box="support" class="solution-box">ENTERPRISE</button>
+                <div data-box="implementation" class="solution-box">ACT</div>
+                <div data-box="integration" class="solution-box">ADAPT</div>
+                <div data-box="support" class="solution-box">REACT</div>
             </div>
         </div>
 
-        <div class="box-card active-box" data-box="implementation">
-            TEST1
+        <div class="box-container">
+            <div class="box-card active-box" data-box="implementation">
+                <span class="box-card-text">TEST1</span>
+            </div>
+            <div class="box-card inactive-box" data-box="integration">
+                <span class="box-card-text">TEST2</span>
+            </div>
+            <div class="box-card inactive-box" data-box="support">
+                <span class="box-card-text">TEST3</span>
+            </div>
         </div>
-        <div class="box-card inactive-box" data-box="integration">
-            TEST2
-        </div>
-        <div class="box-card inactive-box" data-box="support">
-            TEST3
-        </div>
-
-    </div>
+    </section>
     <footer>
         <nav class="footer-nav">
             <a href="../index.html">Home</a>
