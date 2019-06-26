@@ -33,4 +33,3 @@ hamburgerIcon.addEventListener('click', () => {
 ///End Hamburger Menu
 
 
-//Demo Page
