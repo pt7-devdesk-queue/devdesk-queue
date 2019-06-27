@@ -116,6 +116,40 @@
 
     }
 
+    .customer-review-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #EF626C;
+
+        h4 {
+            padding: 15px;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        a {
+            font-size: 1rem;
+            padding: 9px 16px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: whitesmoke;
+            background: rgba(103, 113, 255, 0.7);
+            cursor: pointer;
+            box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+            transition: ease-in-out 0.2s;
+
+            &:hover {
+                box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+                color: white;
+                background: rgba(103, 113, 255, 0.95);
+            }
+        }
+    }
+
 }
 
 .box-card {
@@ -124,23 +158,51 @@
     .box-card-container {
         display: flex;
         justify-content: space-around;
+        background: rgb(216, 216, 216);
 
         .content-boxes {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px 3%;
-            margin: 15px 2%;
-            height: 400px;
-            box-shadow: 1px 1px 3px 1px black;
-            border-radius: 15px;
+            text-align: center;
+            width: 100%;
+            padding: 50px 2%;
+            margin: 15px 0px;
+            height: 450px;
+            background: #FEFFFE;
+
+            transition: .2s;
 
             h3 {
                 font-size: 2.75rem;
+                padding-top: 35px;
             }
 
             p {
                 font-size: 1.5rem;
+                padding-top: 25px;
+                line-height: 25px;
+            }
+
+
+            img {
+                height: 125px;
+                width: auto;
+                transition: .2s;
+            }
+
+            &:hover {
+                background: rgb(238, 239, 255);
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .supporting-box {
+            p {
+                width: 80%;
             }
         }
     }
