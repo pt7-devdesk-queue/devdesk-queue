@@ -654,7 +654,7 @@ body {
   background: #656d9b;
   padding: 25px 0px 35px;
 }
-.container .solution-boxes h3 {
+.container .solution-boxes p {
   font-size: 1.75rem;
   font-weight: bold;
   padding: 5px 0px 25px;
@@ -687,16 +687,38 @@ body {
 .container .solution-boxes .business-solutions .solution-box:active {
   background: #e4acb4;
 }
+.container .box-container {
+  width: 100%;
+}
 .container .box-container .active-box {
   display: block;
-  background-color: red;
-  color: white;
-  font-size: 3rem;
-  border: 2px solid green;
   transition: 0.3s;
 }
 .container .box-container .inactive-box {
   display: none;
+}
+.box-card {
+  width: inherit;
+}
+.box-card .box-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.box-card .box-card-container .content-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 3%;
+  margin: 15px 2%;
+  height: 400px;
+  box-shadow: 1px 1px 3px 1px black;
+  border-radius: 15px;
+}
+.box-card .box-card-container .content-boxes h3 {
+  font-size: 2.75rem;
+}
+.box-card .box-card-container .content-boxes p {
+  font-size: 1.5rem;
 }
 footer {
   background: #8294a5;
