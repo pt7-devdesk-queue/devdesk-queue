@@ -54,8 +54,29 @@
 
             p {
                 font-size: 1.25rem;
-                background: rgba(42, 42, 42, 0.6);
                 padding: 10px 15px;
+            }
+        }
+
+        @media @tablet750 {
+            h2 {
+                font-size: 2.75rem;
+            }
+
+            p {
+                padding: 10px 5px;
+            }
+        }
+
+        @media @mobile700 {
+            width: 80%;
+            text-align: center;
+        }
+
+        @media @mobile600 {
+            h2 {
+                font-size: auto;
+                width: 75%;
             }
         }
     }
@@ -74,6 +95,7 @@
         @media @tablet1000 {
             padding: 10px 0px 20px;
         }
+
         @media @tablet850 {
             padding: 10px 0px;
         }
@@ -89,6 +111,7 @@
             @media @tablet1000 {
                 font-size: 1.5rem;
             }
+
             @media @tablet850 {
                 padding: 5px 0px
             }
@@ -223,6 +246,10 @@
                 height: 300px;
             }
 
+            @media @mobile500 {
+                height: 350px;
+            }
+
             h3 {
                 font-size: 2.25rem;
                 padding-top: 35px;
@@ -231,6 +258,10 @@
 
                 @media @tablet1200 {
                     font-size: 2rem;
+                }
+
+                @media @mobile600 {
+                    padding-top: 15px;
                 }
             }
 
@@ -243,6 +274,9 @@
 
                 @media @tablet1200 {
                     font-size: 1.25rem;
+                }
+                @media @mobile600 {
+                    padding-top: 10px;
                 }
             }
 
@@ -269,6 +303,10 @@
         .supporting-box {
             p {
                 width: 80%;
+
+                @media @tablet850 {
+                    width: 100%;
+                }
             }
         }
     }

@@ -43,6 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
+        //change scrolling distance based on media query
         var element = document.querySelector(this.getAttribute('href'));
         var elementPosition = element.getBoundingClientRect().top;
         if (!mq850.matches) {
