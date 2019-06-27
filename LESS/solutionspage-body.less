@@ -49,6 +49,15 @@
                 background: rgba(103, 113, 255, 0.95);
             }
         }
+
+        @media @tablet1000 {
+
+            p {
+                font-size: 1.25rem;
+                background: rgba(42, 42, 42, 0.6);
+                padding: 10px 15px;
+            }
+        }
     }
 }
 
@@ -62,6 +71,13 @@
         background: rgb(101, 109, 155);
         padding: 25px 0px 35px;
 
+        @media @tablet1000 {
+            padding: 10px 0px 20px;
+        }
+        @media @tablet850 {
+            padding: 10px 0px;
+        }
+
         p {
             font-size: 1.75rem;
             font-weight: bold;
@@ -69,12 +85,23 @@
             text-transform: uppercase;
             font-family: @roboto;
             color: white;
+
+            @media @tablet1000 {
+                font-size: 1.5rem;
+            }
+            @media @tablet850 {
+                padding: 5px 0px
+            }
         }
 
         .business-solutions {
             width: 100%;
             display: inherit;
             justify-content: space-evenly;
+
+            @media @tablet850 {
+                display: none;
+            }
 
             .solution-box {
                 padding: 25px 2%;
@@ -97,6 +124,12 @@
 
                 &:active {
                     background: rgb(228, 172, 180);
+                }
+
+                @media @tablet1000 {
+                    font-size: 1.5rem;
+                    width: 20%;
+                    padding: 15px 2%;
                 }
             }
         }
@@ -160,26 +193,45 @@
     .box-card-container {
         display: flex;
         justify-content: space-around;
-        background: rgb(216, 216, 216);
+        background: rgb(255, 248, 248);
+
+        @media @tablet850 {
+            flex-direction: column;
+        }
 
         .content-boxes {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             text-align: center;
             width: 100%;
             padding: 50px 2%;
             margin: 15px 0px;
-            height: 450px;
-            background: #FEFFFE;
+            height: 500px;
+            background: rgb(240, 240, 240);
 
             transition: .2s;
 
+            &:nth-child(even) {
+                background: rgb(233, 233, 233);
+            }
+
+            @media @tablet850 {
+                padding: 25px 2%;
+                margin: 15px 0px;
+                height: 300px;
+            }
+
             h3 {
-                font-size: 2.75rem;
+                font-size: 2.25rem;
                 padding-top: 35px;
-                font-family: @ubuntu;
+                font-family: @bitter;
                 color: rgb(32, 45, 46);
+
+                @media @tablet1200 {
+                    font-size: 2rem;
+                }
             }
 
             p {
@@ -188,6 +240,10 @@
                 line-height: 25px;
                 font-family: @ubuntu;
                 color: rgb(32, 45, 46);
+
+                @media @tablet1200 {
+                    font-size: 1.25rem;
+                }
             }
 
 
@@ -195,6 +251,10 @@
                 height: 125px;
                 width: auto;
                 transition: .2s;
+
+                @media @tablet1200 {
+                    height: 75px;
+                }
             }
 
             &:hover {

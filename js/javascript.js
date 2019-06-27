@@ -59,20 +59,3 @@ hamburgerIcon.addEventListener('click', () => {
 const devDeskLogo = document.querySelector('#dev-desk-logo');
 devDeskLogo.style.userSelect = "none";
 ///End Navivation / Hamburger menu JS
-
-//Smoothscrolling when hyperlink clicked
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        var element = document.querySelector(this.getAttribute('href'));
-        var headerOffset = 100;
-        var elementPosition = element.getBoundingClientRect().top;
-        var offsetPosition = elementPosition - headerOffset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
-    })
-});
