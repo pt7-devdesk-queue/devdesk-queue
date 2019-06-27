@@ -46,10 +46,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         //change scrolling distance based on media query
         var element = document.querySelector(this.getAttribute('href'));
         var elementPosition = element.getBoundingClientRect().top;
+        const mq600 = window.matchMedia("(max-width: 600px)");
         if (!mq850.matches) {
             var headerOffset = 100;
         } else if (mq850.matches) {
-            var headerOffset = 140;
+            if (!mq600.matches) {
+                var headerOffset = 140;
+            } else if (mq600.matches) {
+                var headerOffset = 115;
+            }
         };
         var offsetPosition = elementPosition - headerOffset;
 
