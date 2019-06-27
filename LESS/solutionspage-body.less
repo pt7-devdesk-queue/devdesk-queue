@@ -185,6 +185,10 @@
             font-size: 1.5rem;
             color: white;
             font-family: @bitter;
+
+            @media @mobile600 {
+                font-size: 1.25rem;
+            }
         }
 
         a {
@@ -246,10 +250,6 @@
                 height: 300px;
             }
 
-            @media @mobile500 {
-                height: 350px;
-            }
-
             h3 {
                 font-size: 2.25rem;
                 padding-top: 35px;
@@ -262,6 +262,10 @@
 
                 @media @mobile600 {
                     padding-top: 15px;
+                }
+
+                @media @mobile500 {
+                    font-size: 1.75rem;
                 }
             }
 
@@ -278,6 +282,10 @@
                 @media @mobile600 {
                     padding-top: 10px;
                 }
+
+                @media @mobile500 {
+                    font-size: 1.15rem;
+                }
             }
 
 
@@ -288,6 +296,9 @@
 
                 @media @tablet1200 {
                     height: 75px;
+                }
+                @media @mobile500 {
+                    height: 50px;
                 }
             }
 
