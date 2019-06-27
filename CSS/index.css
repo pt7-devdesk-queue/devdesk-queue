@@ -676,6 +676,7 @@ body {
   width: 27.5%;
   box-shadow: 1px 2px 3px 1px rgba(42, 42, 42, 0.5);
   user-select: none;
+  font-family: 'Roboto Slab', serif;
   transition: 0.3s;
 }
 .container .solution-boxes .business-solutions .solution-box:hover {
@@ -702,12 +703,13 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: #EF626C;
+  background: linear-gradient(-90deg, #FFDF64, #EF626C, #FFDF64);
 }
 .container .customer-review-bottom h4 {
   padding: 15px;
   font-size: 1.5rem;
   color: white;
+  font-family: 'Bitter', serif;
 }
 .container .customer-review-bottom a {
   font-size: 1rem;
@@ -750,11 +752,15 @@ body {
 .box-card .box-card-container .content-boxes h3 {
   font-size: 2.75rem;
   padding-top: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #202d2e;
 }
 .box-card .box-card-container .content-boxes p {
   font-size: 1.5rem;
   padding-top: 25px;
   line-height: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #202d2e;
 }
 .box-card .box-card-container .content-boxes img {
   height: 125px;
