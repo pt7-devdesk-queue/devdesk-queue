@@ -599,20 +599,25 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: 'Ubuntu', sans-serif;
+  background: url(../assets/demoBack.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100vw;
+  background-position: 100% 25%;
 }
 .demo-header {
   color: white;
   font-size: 1.5rem;
-  background-color: dodgerblue;
   display: block;
+  margin-top: 10px;
   padding-left: 150px;
+  text-shadow: 2px 2px 4px black;
 }
 .demo-header a {
   text-decoration: none;
 }
 .demo-header h1 {
   font-size: 2rem;
-  color: black;
+  color: white;
   padding-bottom: 20px;
 }
 .demo-header p {
@@ -620,13 +625,13 @@ body {
 }
 .demo-request-top {
   display: flex;
-  background-color: dodgerblue;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 .demo-request-top .demo-first {
   width: 51%;
 }
 .demo-request-top .demo-second {
-  background-color: white;
   font-size: 1rem;
   width: 170px;
   height: 50px;
@@ -634,6 +639,8 @@ body {
 .demo-content {
   display: flex;
   padding-left: 150px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 .demo-content .demo-features {
   font-size: 1.5rem;
@@ -664,7 +671,7 @@ body {
 }
 .demo-content .demo-form .nameError {
   font-size: 0.5rem;
-  color: red;
+  color: chartreuse;
 }
 .demo-content .demo-form input {
   height: 35px;
@@ -676,9 +683,10 @@ body {
   width: 200px;
   height: 35px;
   background-color: chartreuse;
+  margin-bottom: 71px;
 }
 .demo-content .demo-form .error {
-  color: red;
+  color: chartreuse;
   margin-top: 0px;
   font-size: 0.7rem;
 }
@@ -691,7 +699,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 500px;
+  height: 570px;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
@@ -709,7 +717,7 @@ body {
   align-items: none;
   flex-direction: row;
   color: #fff;
-  background-color: #333;
+  background-color: #59A4DB;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -721,7 +729,7 @@ body {
 .carousel .right-button:hover {
   color: #333;
   background-color: #fff;
-  border: 2px solid #333;
+  border: 2px solid #59A4DB;
 }
 .carousel .left-button {
   top: 50%;
@@ -733,19 +741,24 @@ body {
   right: 25px;
   transform: translate(0, -50%);
 }
+.testimonials {
+  background: url(../assets/blur.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100vw;
+}
 .testimonials-header {
-  color: white;
   font-size: 1.5rem;
-  background-color: dodgerblue;
   display: block;
   padding-left: 150px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 .testimonials-header a {
   text-decoration: none;
 }
 .testimonials-header h1 {
+  color: white;
   font-size: 2rem;
-  color: black;
   padding-bottom: 20px;
 }
 .testimonials-header p {
@@ -753,6 +766,9 @@ body {
 }
 .card {
   padding-left: 170px;
+  width: 600px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 .card img {
   display: inline-block;
@@ -764,7 +780,7 @@ body {
 .card .headline {
   font-size: 2rem;
   padding-bottom: 25px;
-  vertical-align: middle;
+  vertical-align: justify;
 }
 .card .test p {
   font-size: 1.5rem;

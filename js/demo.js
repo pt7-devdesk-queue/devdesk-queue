@@ -31,11 +31,13 @@ email.addEventListener('change', () => {
     }
 });
 phone.addEventListener('change', () => {
-    if (phone.value.length < 15) {
+    if (phone.value.length < 10) {
         phoneError.classList.toggle('hidden');
         phoneError.classList.toggle('error');        
     } 
 });
+
+
 
 
 
