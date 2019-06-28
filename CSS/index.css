@@ -598,6 +598,7 @@ body {
     font-size: 1rem;
   }
 }
+
 .solutions-heading {
   background: url(../assets/building.jpg);
   background-repeat: no-repeat;
@@ -899,6 +900,203 @@ body {
   .box-card .box-card-container .supporting-box p {
     width: 100%;
   }
+  
+.demo {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  background: url(../assets/demoBack.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100vw;
+  background-position: 100% 25%;
+}
+.demo-header {
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 10px;
+  padding-left: 150px;
+  text-shadow: 2px 2px 4px black;
+}
+.demo-header a {
+  text-decoration: none;
+}
+.demo-header h1 {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 20px;
+}
+.demo-header p {
+  line-height: 30px;
+}
+.demo-request-top {
+  display: flex;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.demo-request-top .demo-first {
+  width: 51%;
+}
+.demo-request-top .demo-second {
+  font-size: 1rem;
+  width: 170px;
+  height: 50px;
+}
+.demo-content {
+  display: flex;
+  padding-left: 150px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.demo-content .demo-features {
+  font-size: 1.5rem;
+  width: 49%;
+  line-height: 25px;
+  margin-top: 40px;
+}
+.demo-content .demo-features h3 {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.demo-content .demo-features p {
+  line-height: 55px;
+}
+.demo-content .demo-features .demo-cta {
+  font-size: 0.9rem;
+}
+.demo-content .demo-form {
+  font-size: 1rem;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.demo-content .demo-form p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+.demo-content .demo-form .nameError {
+  font-size: 0.5rem;
+  color: chartreuse;
+}
+.demo-content .demo-form input {
+  height: 35px;
+  width: 200px;
+  font-size: 1rem;
+}
+.demo-content .demo-form button {
+  margin-top: 25px;
+  width: 200px;
+  height: 35px;
+  background-color: chartreuse;
+  margin-bottom: 71px;
+}
+.demo-content .demo-form .error {
+  color: chartreuse;
+  margin-top: 0px;
+  font-size: 0.7rem;
+}
+.demo-content .demo-form .hidden {
+  display: none;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-left: 100px;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #59A4DB;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #59A4DB;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.testimonials {
+  background: url(../assets/blur.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100vw;
+}
+.testimonials-header {
+  font-size: 1.5rem;
+  display: block;
+  padding-left: 150px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.testimonials-header a {
+  text-decoration: none;
+}
+.testimonials-header h1 {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.testimonials-header p {
+  line-height: 30px;
+}
+.card {
+  padding-left: 170px;
+  width: 600px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.card img {
+  display: inline-block;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.card .headline {
+  font-size: 2rem;
+  padding-bottom: 25px;
+  vertical-align: justify;
+}
+.card .test p {
+  font-size: 1.5rem;
+  width: 400px;
+  padding-bottom: 25px;
+  vertical-align: middle;
+}
+.card .author {
+  font-size: 1.8rem;
+
 }
 footer {
   background: #8294a5;
