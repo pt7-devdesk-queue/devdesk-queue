@@ -154,6 +154,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #6459ff;
+    padding: 10px 12.5%;
   }
 }
 @media (max-width: 600px) {
@@ -164,27 +165,34 @@ body {
 }
 .header-container h1 {
   font-size: 2rem;
-  margin-right: 350px;
+  margin-right: 500px;
   font-family: 'Roboto Slab', serif;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .header-container h1 {
-    margin-right: 50px;
+    margin-right: 450px;
+  }
+}
+@media (max-width: 1200px) {
+  .header-container h1 {
+    margin-right: 400px;
   }
 }
 @media (max-width: 1000px) {
   .header-container h1 {
-    margin-right: 0px;
+    margin-right: 350px;
   }
 }
 @media (max-width: 850px) {
   .header-container h1 {
-    font-size: 3.5rem;
+    margin-right: 0px;
+    font-size: 3rem;
     padding-bottom: 15px;
   }
 }
 @media (max-width: 600px) {
   .header-container h1 {
+    font-size: 3rem;
     padding: 15px 0px;
   }
 }
@@ -196,13 +204,13 @@ body {
   text-shadow: 2px 2px 4px black;
 }
 .header-container nav {
-  width: 50%;
+  width: 35%;
   display: flex;
   justify-content: space-evenly;
 }
 @media (max-width: 1300px) {
   .header-container nav {
-    width: 100%;
+    width: 40%;
   }
 }
 @media (max-width: 600px) {
@@ -223,6 +231,11 @@ body {
   .header-container nav a {
     visibility: visible;
     text-shadow: 2px 2px 4px black;
+  }
+}
+@media (max-width: 750px) {
+  .header-container nav a {
+    padding: 0px 10px;
   }
 }
 @media (max-width: 600px) {
@@ -308,7 +321,7 @@ body {
   .hamburger-menu {
     position: fixed;
     right: 15px;
-    top: 30px;
+    top: 25px;
   }
 }
 .hamburger-menu:after,
