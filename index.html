@@ -8,6 +8,17 @@
     <title>Dev Desk</title>
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Bitter|Roboto+Slab|Ubuntu&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("scroll", () => {
+            const whatWeDo = document.querySelector('#what-we-do-appear');
+            if (this.scrollY >= 1) {
+                whatWeDo.classList.add('what-we-do');
+            } else {
+                whatWeDo.classList.remove('what-we-do');
+            }
+        });
+    </script>
 </head>
 
 <body>

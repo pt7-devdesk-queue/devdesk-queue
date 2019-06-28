@@ -17,8 +17,8 @@ class BoxLink {
 }
 //If the window is not below 850px width, dataset comes into play and allows changing
 const mq850 = window.matchMedia("(max-width: 850px)");
+let boxes = document.querySelectorAll('.solution-box');
 if (!mq850.matches) {
-    let boxes = document.querySelectorAll('.solution-box');
     boxes.forEach(box => new BoxLink(box));
 }
 
@@ -32,6 +32,7 @@ window.addEventListener('resize', () => {
     } else if (this.innerWidth > 850) {
         boxColumn.forEach(box => {
             box.style.display = "";
+            boxes.forEach(box => new BoxLink(box));
         });
     }
 });

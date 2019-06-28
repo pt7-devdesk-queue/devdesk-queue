@@ -54,3 +54,6 @@ hamburgerIcon.addEventListener('click', () => {
             break;
     }
 });
+
+//Navigation and Hamburger Menu transitions and functions
+
