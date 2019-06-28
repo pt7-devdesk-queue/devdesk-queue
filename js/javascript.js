@@ -4,20 +4,27 @@ document.addEventListener("scroll", () => {
     const hamburger = document.querySelector('.hamburger-menu');
     const devDeskLogo = document.querySelector('.header-container h1');
     const mq = window.matchMedia("(max-width: 850px)");
+    const whatWeDo = document.querySelector('#what-we-do-appear');
     if (!mq.matches) {
-        if (this.scrollY >= 150) {
-            hamburger.classList.remove('hamburger-open-timing');
-            nav.classList.add('nav-fixed-change');
-            hamburger.classList.add('hamburger-menu-scroll');
-            nav.classList.remove('nav-hamburger-clicked');
-            hamburger.classList.remove('hamburger-menu-click');
-            devDeskLogo.classList.remove('devDesk-Shadow');
+        if (this.scrollY >= 1) {
+            whatWeDo.classList.add('what-we-do');
+            if (this.scrollY >= 150) {
+                hamburger.classList.remove('hamburger-open-timing');
+                nav.classList.add('nav-fixed-change');
+                hamburger.classList.add('hamburger-menu-scroll');
+                nav.classList.remove('nav-hamburger-clicked');
+                hamburger.classList.remove('hamburger-menu-click');
+                devDeskLogo.classList.remove('devDesk-Shadow');
+            } else {
+                nav.classList.remove('nav-fixed-change');
+                hamburger.classList.remove('hamburger-menu-scroll');
+                hamburger.classList.add('hamburger-open-timing');
+                devDeskLogo.classList.add('devDesk-Shadow');
+            }
         } else {
-            nav.classList.remove('nav-fixed-change');
-            hamburger.classList.remove('hamburger-menu-scroll');
-            hamburger.classList.add('hamburger-open-timing');
-            devDeskLogo.classList.add('devDesk-Shadow');
+            whatWeDo.classList.remove('what-we-do');
         }
+
     }
 });
 window.addEventListener('resize', () => {
