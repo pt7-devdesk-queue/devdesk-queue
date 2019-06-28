@@ -72,26 +72,24 @@
             }
         }
 
-        button {
-            font-size: 1.25rem;
-            padding: 5px 15px;
-            border: 0px;
-            border-radius: 5px;
-            cursor: pointer;
-            background: rgb(100, 89, 255);
+        a {
+            font-size: 1rem;
+            padding: 9px 16px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
             color: whitesmoke;
-            box-shadow: 0px 2px 3px 2px rgb(155, 148, 199);
-            transition: .2s;
-            font-family: @ubuntu;
-
-            @media @mobile550 {
-                font-size: 1rem;
-            }
+            background: rgba(103, 113, 255, 0.7);
+            cursor: pointer;
+            box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+            transition: ease-in-out 0.2s;
+            font-family: @roboto;
 
             &:hover {
-                background: white;
-                color: rgb(100, 89, 255);
-                box-shadow: 0px 1px 2px 1px rgb(89, 85, 114);
+                box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+                color: white;
+                background: rgba(103, 113, 255, 0.95);
             }
         }
     }

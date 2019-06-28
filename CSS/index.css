@@ -432,27 +432,24 @@ body {
     font-size: 1rem;
   }
 }
-.main-page-greeting .top-content button {
-  font-size: 1.25rem;
-  padding: 5px 15px;
-  border: 0px;
-  border-radius: 5px;
-  cursor: pointer;
-  background: #6459ff;
+.main-page-greeting .top-content a {
+  font-size: 1rem;
+  padding: 9px 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
   color: whitesmoke;
-  box-shadow: 0px 2px 3px 2px #9b94c7;
-  transition: 0.2s;
-  font-family: 'Ubuntu', sans-serif;
+  background: rgba(103, 113, 255, 0.7);
+  cursor: pointer;
+  box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+  transition: ease-in-out 0.2s;
+  font-family: 'Roboto Slab', serif;
 }
-@media (max-width: 550px) {
-  .main-page-greeting .top-content button {
-    font-size: 1rem;
-  }
-}
-.main-page-greeting .top-content button:hover {
-  background: white;
-  color: #6459ff;
-  box-shadow: 0px 1px 2px 1px #595572;
+.main-page-greeting .top-content a:hover {
+  box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+  color: white;
+  background: rgba(103, 113, 255, 0.95);
 }
 .what-we-do {
   width: 50%;
