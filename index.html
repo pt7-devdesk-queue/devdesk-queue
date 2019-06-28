@@ -49,14 +49,14 @@
                 <a href="./pages/demo.html">Request a Demo</a>
             </div>
         </section>
-            <div class="bottom-arrows">
-                <img src="assets/BottomArrow.png" id="first-arrow">
-                <img src="assets/BottomArrow.png" id="second-arrow">
-                <img src="assets/BottomArrow.png" id="third-arrow">
-                <!-- <div id="first-arrow">V</div>
+        <div class="bottom-arrows">
+            <img src="assets/BottomArrow.png" id="first-arrow">
+            <img src="assets/BottomArrow.png" id="second-arrow">
+            <img src="assets/BottomArrow.png" id="third-arrow">
+            <!-- <div id="first-arrow">V</div>
                 <div id="second-arrow">V</div>
                 <div id="third-arrow">V</div> -->
-            </div>
+        </div>
         <div class="what-we-do-hidden" id="what-we-do-appear-hide">
             <h2>What We Do</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nihil voluptatem, illum nisi quod
@@ -119,6 +119,22 @@
     </footer>
 
     <script type="text/javascript" src="./js/javascript.js"></script>
+    <script>
+        const scrollingArrows = document.querySelector('.bottom-arrows');
+        scrollingArrows.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var element = document.querySelector('.main-page-greeting');
+            var elementPosition = element.getBoundingClientRect().bottom;
+            var headerOffset = 300;
+            var offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 
 </html>
