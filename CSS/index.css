@@ -598,7 +598,6 @@ body {
     font-size: 1rem;
   }
 }
-
 .solutions-heading {
   background: url(../assets/building.jpg);
   background-repeat: no-repeat;
@@ -900,7 +899,7 @@ body {
   .box-card .box-card-container .supporting-box p {
     width: 100%;
   }
-  
+}
 .demo {
   width: 100%;
   margin: 0 auto;
@@ -1096,7 +1095,6 @@ body {
 }
 .card .author {
   font-size: 1.8rem;
-
 }
 footer {
   background: #8294a5;
