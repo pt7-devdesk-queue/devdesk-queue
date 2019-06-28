@@ -1,0 +1,324 @@
+.solutions-heading {
+    background: url(../assets/building.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .solutions-heading-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 4rem;
+            font-family: @bitter;
+            color: whitesmoke;
+            padding: 15px 0px;
+            text-shadow: 2px 2px 2px rgba(42, 42, 42, 0.75), 3px 3px 6px rgba(42, 42, 42, 0.3);
+        }
+
+        p {
+            font-size: 1.75rem;
+            color: whitesmoke;
+            font-family: @roboto;
+            background: rgba(42, 42, 42, 0.6);
+            padding: 10px 15px;
+            box-shadow: 1px 2px 4px 1px rgba(42, 42, 42, 0.6);
+        }
+
+        a {
+            font-size: 1rem;
+            padding: 9px 16px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-clip: padding-box;
+            color: whitesmoke;
+            background: rgba(103, 113, 255, 0.7);
+            cursor: pointer;
+            box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+            transition: ease-in-out 0.2s;
+
+            &:hover {
+                box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+                color: white;
+                background: rgba(103, 113, 255, 0.95);
+            }
+        }
+
+        @media @tablet1000 {
+
+            p {
+                font-size: 1.25rem;
+                padding: 10px 15px;
+            }
+        }
+
+        @media @tablet750 {
+            h2 {
+                font-size: 2.75rem;
+            }
+
+            p {
+                padding: 10px 5px;
+            }
+        }
+
+        @media @mobile700 {
+            width: 80%;
+            text-align: center;
+        }
+
+        @media @mobile600 {
+            h2 {
+                font-size: auto;
+                width: 75%;
+            }
+        }
+    }
+}
+
+.container {
+
+    .solution-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: rgb(101, 109, 155);
+        padding: 25px 0px 35px;
+
+        @media @tablet1000 {
+            padding: 10px 0px 20px;
+        }
+
+        @media @tablet850 {
+            padding: 10px 0px;
+        }
+
+        p {
+            font-size: 1.75rem;
+            font-weight: bold;
+            padding: 5px 0px 25px;
+            text-transform: uppercase;
+            font-family: @roboto;
+            color: white;
+
+            @media @tablet1000 {
+                font-size: 1.5rem;
+            }
+
+            @media @tablet850 {
+                padding: 5px 0px
+            }
+        }
+
+        .business-solutions {
+            width: 100%;
+            display: inherit;
+            justify-content: space-evenly;
+
+            @media @tablet850 {
+                display: none;
+            }
+
+            .solution-box {
+                padding: 25px 2%;
+                background: rgb(90, 175, 171);
+                color: whitesmoke;
+                font-size: 2rem;
+                text-align: center;
+                width: 27.5%;
+                box-shadow: 1px 2px 3px 1px rgba(42, 42, 42, 0.5);
+                user-select: none;
+                font-family: @roboto;
+                transition: .3s;
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 1px 2px 3px 2px rgba(42, 42, 42, 0.6);
+                    background: #C5979D;
+                    transform: scale(1.1);
+                }
+
+                &:active {
+                    background: rgb(228, 172, 180);
+                }
+
+                @media @tablet1000 {
+                    font-size: 1.5rem;
+                    width: 20%;
+                    padding: 15px 2%;
+                }
+            }
+        }
+    }
+
+    .box-container {
+        width: 100%;
+
+        .active-box {
+            display: block;
+
+            transition: .3s;
+        }
+
+        .inactive-box {
+            display: none;
+        }
+
+    }
+
+    .customer-review-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(-90deg, #FFDF64, #EF626C, #FFDF64);
+
+        h4 {
+            padding: 15px;
+            font-size: 1.5rem;
+            color: white;
+            font-family: @bitter;
+
+            @media @mobile600 {
+                font-size: 1.25rem;
+            }
+        }
+
+        a {
+            font-size: 1rem;
+            padding: 9px 16px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: whitesmoke;
+            background: rgba(103, 113, 255, 0.7);
+            cursor: pointer;
+            box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+            transition: ease-in-out 0.2s;
+
+            &:hover {
+                box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+                color: white;
+                background: rgba(103, 113, 255, 0.95);
+            }
+        }
+    }
+
+}
+
+.box-card {
+    width: inherit;
+
+    .box-card-container {
+        display: flex;
+        justify-content: space-around;
+        background: rgb(255, 248, 248);
+
+        @media @tablet850 {
+            flex-direction: column;
+        }
+
+        .content-boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding: 50px 2%;
+            margin: 15px 0px;
+            height: 500px;
+            background: rgb(240, 240, 240);
+
+            transition: .2s;
+
+            &:nth-child(even) {
+                background: rgb(233, 233, 233);
+            }
+
+            @media @tablet850 {
+                padding: 25px 2%;
+                margin: 15px 0px;
+                height: 300px;
+            }
+
+            h3 {
+                font-size: 2.25rem;
+                padding-top: 35px;
+                font-family: @bitter;
+                color: rgb(32, 45, 46);
+
+                @media @tablet1200 {
+                    font-size: 2rem;
+                }
+
+                @media @mobile600 {
+                    padding-top: 15px;
+                }
+
+                @media @mobile500 {
+                    font-size: 1.75rem;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding-top: 25px;
+                line-height: 25px;
+                font-family: @ubuntu;
+                color: rgb(32, 45, 46);
+
+                @media @tablet1200 {
+                    font-size: 1.25rem;
+                }
+                @media @mobile600 {
+                    padding-top: 10px;
+                }
+
+                @media @mobile500 {
+                    font-size: 1.15rem;
+                }
+            }
+
+
+            img {
+                height: 125px;
+                width: auto;
+                transition: .2s;
+
+                @media @tablet1200 {
+                    height: 75px;
+                }
+                @media @mobile500 {
+                    height: 50px;
+                }
+            }
+
+            &:hover {
+                background: rgb(238, 239, 255);
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .supporting-box {
+            p {
+                width: 80%;
+
+                @media @tablet850 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
