@@ -27,17 +27,6 @@ if (!mq850.matches) {
     });
 }
 
-//changing scroll distance with media queries
-if (!mq850.matches) {
-    let boxes = document.querySelectorAll('.solution-box');
-    boxes.forEach(box => new BoxLink(box));
-} else if (mq850.matches) {
-    const boxColumn = document.querySelectorAll('.box-card');
-    boxColumn.forEach(box => {
-        box.style.display = "flex";
-    });
-}
-
 //Smoothscrolling when hyperlink clicked
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

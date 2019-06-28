@@ -58,6 +58,5 @@ hamburgerIcon.addEventListener('click', () => {
 // removed ability to highlight logo
 const devDeskLogo = document.querySelector('#dev-desk-logo');
 devDeskLogo.style.userSelect = "none";
-
 ///End Navivation / Hamburger menu JS
 
