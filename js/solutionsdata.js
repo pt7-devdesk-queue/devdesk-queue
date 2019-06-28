@@ -23,6 +23,14 @@ if (!mq850.matches) {
 }
 
 //Adding-removing classes based on resize
+window.addEventListener('resize', () => {
+    const boxColumn = document.querySelectorAll('.box-card');
+    if (this.innerWidth <= 850) {
+        boxColumn.forEach(box => {
+            box.style.display = "block";
+        });
+    }
+});
 
 //Smoothscrolling when hyperlink clicked
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
