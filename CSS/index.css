@@ -377,13 +377,14 @@ body {
   margin: 0 auto;
 }
 .main-page-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: url(../assets/blur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 @media (max-width: 1000px) {
   .main-page-greeting {
@@ -640,8 +641,72 @@ body {
   color: white;
   background: rgba(103, 113, 255, 0.95);
 }
-#what-we-do-appear {
+#what-we-do-appear-hide {
   transition: 0.3s;
+}
+.what-we-do-hidden {
+  width: 50%;
+  padding: 40px 2%;
+  margin-top: 100px;
+  border-radius: 25px 0px 25px 0px;
+  background: white;
+  box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
+  z-index: 2;
+}
+@media (max-width: 1000px) {
+  .what-we-do-hidden {
+    width: 90%;
+  }
+}
+@media (max-width: 650px) {
+  .what-we-do-hidden {
+    text-align: center;
+  }
+}
+.what-we-do-hidden h2 {
+  font-size: 1.75rem;
+  padding-bottom: 20px;
+  font-family: 'Bitter', serif;
+}
+@media (max-width: 550px) {
+  .what-we-do-hidden h2 {
+    font-size: 1.5rem;
+  }
+}
+.what-we-do-hidden p {
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 550px) {
+  .what-we-do-hidden p {
+    font-size: 1.15rem;
+  }
+}
+.bottom-arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: -90px;
+}
+.bottom-arrows img,
+.bottom-arrows div {
+  height: 100%;
+  width: auto;
+  font-family: 'Ubuntu', sans-serif;
+  user-select: none;
+}
+.bottom-arrows #first-arrow {
+  font-size: 3rem;
+}
+.bottom-arrows #second-arrow {
+  margin-top: -35px;
+  font-size: 4em;
+}
+.bottom-arrows #third-arrow {
+  margin-top: -35px;
+  font-size: 5rem;
 }
 .solutions-heading {
   background: url(../assets/building.jpg);

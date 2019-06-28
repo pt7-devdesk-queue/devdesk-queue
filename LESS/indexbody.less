@@ -9,13 +9,12 @@
 .main-page-greeting {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: url(../assets/blur.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     @media @tablet1000 {
         padding: 150px 6%;
@@ -276,6 +275,74 @@
     }
 }
 
-#what-we-do-appear {
+#what-we-do-appear-hide {
     transition: .3s;
+}
+
+.what-we-do-hidden {
+    width: 50%;
+    padding: 40px 2%;
+    margin-top: 100px;
+    border-radius: 25px 0px 25px 0px;
+    background: white;
+    box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
+    z-index: 2;
+
+    @media @tablet1000 {
+        width: 90%;
+    }
+
+    @media @mobile650 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        padding-bottom: 20px;
+        font-family: @bitter;
+
+        @media @mobile550 {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-family: @ubuntu;
+
+        @media @mobile550 {
+            font-size: 1.15rem;
+        }
+    }
+
+}
+
+
+.bottom-arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: -90px;
+
+    img, div {
+        height: 100%;
+        width: auto;
+        font-family: @ubuntu;
+        user-select: none;
+    }
+    #first-arrow {
+        font-size: 3rem;
+    }
+
+    #second-arrow {
+        margin-top: -35px;
+        font-size: 4em;
+    }
+
+    #third-arrow {
+        margin-top: -35px;
+        font-size: 5rem;
+    }
 }

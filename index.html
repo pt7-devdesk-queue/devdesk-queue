@@ -11,11 +11,13 @@
 
     <script>
         document.addEventListener("scroll", () => {
-            const whatWeDo = document.querySelector('#what-we-do-appear');
+            const whatWeDo = document.querySelector('#what-we-do-appear-hide');
             if (this.scrollY >= 1) {
+                whatWeDo.classList.remove('what-we-do-hidden');
                 whatWeDo.classList.add('what-we-do');
             } else {
                 whatWeDo.classList.remove('what-we-do');
+                whatWeDo.classList.add('what-we-do-hidden');
             }
         });
     </script>
@@ -47,7 +49,15 @@
                 <a href="./pages/demo.html">Request a Demo</a>
             </div>
         </section>
-        <div id="what-we-do-appear">
+            <div class="bottom-arrows">
+                <img src="assets/BottomArrow.png" id="first-arrow">
+                <img src="assets/BottomArrow.png" id="second-arrow">
+                <img src="assets/BottomArrow.png" id="third-arrow">
+                <!-- <div id="first-arrow">V</div>
+                <div id="second-arrow">V</div>
+                <div id="third-arrow">V</div> -->
+            </div>
+        <div class="what-we-do-hidden" id="what-we-do-appear-hide">
             <h2>What We Do</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nihil voluptatem, illum nisi quod
                 exercitationem mollitia enim eaque, et quia veritatis autem, eos consequuntur impedit assumenda nulla in
