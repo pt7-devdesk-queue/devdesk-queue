@@ -640,6 +640,9 @@ body {
   color: white;
   background: rgba(103, 113, 255, 0.95);
 }
+#what-we-do-appear {
+  transition: 0.3s;
+}
 .solutions-heading {
   background: url(../assets/building.jpg);
   background-repeat: no-repeat;
