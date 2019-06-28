@@ -1,18 +1,18 @@
 .carousel {
     width: 100%;
     .flex(center, center);
-    height: 500px;
+    height: 570px;
     position: relative;
     overflow: hidden;
     margin-top: 16px;
-    margin-left: 100px;
+    margin-left: 100px;    
     @media(min-width: 1200px){
       width: 1200px;
     }
     .left-button, .right-button {
       .flex(center);
       color: #fff;
-      background-color: #333;
+      background-color: #59A4DB;
       font-size: 40px;
       border-radius: 50%;
       position: absolute;
@@ -22,7 +22,7 @@
       &:hover {
         color: #333;
         background-color: #fff;
-        border: 2px solid #333;
+        border: 2px solid #59A4DB;
       }
     }
     .left-button {
@@ -38,21 +38,30 @@
   
 }
 
-.testimonials-header {
-    color: white;
-    font-size: 1.5rem;
-    background-color: dodgerblue;
+.testimonials {
+    background: url(../assets/blur.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100vw;
+    
+}
+
+.testimonials-header {    
+    font-size: 1.5rem;    
     display: block;
     padding-left: 150px; 
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    
     
     a{
         text-decoration: none;
     }
     
     h1 {        
-        font-size: 2rem;
-        color: black;
-        padding-bottom: 20px;                       
+        color: white;
+        font-size: 2rem;        
+        padding-bottom: 20px; 
+                            
     }
 
     p {
@@ -61,7 +70,10 @@
 }
 
 .card {
-    padding-left: 170px;
+    padding-left: 170px;    
+    width: 600px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 
     img {
         display: inline-block;
@@ -74,17 +86,20 @@
     .headline {
         font-size: 2.0rem;
         padding-bottom: 25px;
-        vertical-align: middle;
+        vertical-align: justify;
+        
     }
     .test {
         p {
             font-size: 1.5rem;
             width: 400px; 
             padding-bottom: 25px; 
-            vertical-align: middle;          
+            vertical-align: middle;  
+                   
         }        
     }
     .author {
         font-size: 1.8rem;
+        
     }
 }
