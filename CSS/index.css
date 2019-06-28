@@ -598,6 +598,42 @@ body {
     font-size: 1rem;
   }
 }
+.customer-review-bottom-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(-90deg, #331E38, #EF626C, #331E38);
+}
+.customer-review-bottom-index h4 {
+  padding: 15px;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Bitter', serif;
+}
+@media (max-width: 600px) {
+  .customer-review-bottom-index h4 {
+    font-size: 1.25rem;
+  }
+}
+.customer-review-bottom-index a {
+  font-size: 1rem;
+  padding: 9px 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: whitesmoke;
+  background: rgba(103, 113, 255, 0.7);
+  cursor: pointer;
+  box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+  transition: ease-in-out 0.2s;
+}
+.customer-review-bottom-index a:hover {
+  box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+  color: white;
+  background: rgba(103, 113, 255, 0.95);
+}
 .solutions-heading {
   background: url(../assets/building.jpg);
   background-repeat: no-repeat;
