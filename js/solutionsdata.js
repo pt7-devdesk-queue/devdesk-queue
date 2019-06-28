@@ -29,6 +29,10 @@ window.addEventListener('resize', () => {
         boxColumn.forEach(box => {
             box.style.display = "block";
         });
+    } else if (this.innerWidth > 850) {
+        boxColumn.forEach(box => {
+            box.style.display = "";
+        });
     }
 });
 
