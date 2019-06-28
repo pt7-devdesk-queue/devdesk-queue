@@ -15,17 +15,14 @@ class BoxLink {
         this.contentCards.classList.add('active-box');
     }
 }
-//Making all boxes appear when media query hits 850px
+//If the window is not below 850px width, dataset comes into play and allows changing
 const mq850 = window.matchMedia("(max-width: 850px)");
 if (!mq850.matches) {
     let boxes = document.querySelectorAll('.solution-box');
     boxes.forEach(box => new BoxLink(box));
-} else if (mq850.matches) {
-    const boxColumn = document.querySelectorAll('.box-card');
-    boxColumn.forEach(box => {
-        box.style.display = "flex";
-    });
 }
+
+//Adding-removing classes based on resize
 
 //Smoothscrolling when hyperlink clicked
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
