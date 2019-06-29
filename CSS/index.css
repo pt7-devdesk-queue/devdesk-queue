@@ -1289,11 +1289,17 @@ footer .footer-nav a {
   font-size: 1rem;
   white-space: nowrap;
   color: #002d57;
+  font-family: 'Ubuntu', sans-serif;
+  transition: 0.3s;
 }
 @media (max-width: 600px) {
   footer .footer-nav a {
     font-size: 0.8rem;
   }
+}
+footer .footer-nav a:hover {
+  color: #4875a0;
+  transform: scale(1.05);
 }
 footer .small-footer {
   background: #404952;
@@ -1301,6 +1307,7 @@ footer .small-footer {
   text-align: center;
   padding: 15px 0px;
   font-size: 0.8rem;
+  font-family: 'Bitter', serif;
 }
 @media (max-width: 600px) {
   footer .small-footer {

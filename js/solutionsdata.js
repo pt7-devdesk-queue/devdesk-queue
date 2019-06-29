@@ -50,9 +50,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             var headerOffset = 100;
         } else if (mq850.matches) {
             if (!mq600.matches) {
-                var headerOffset = 140;
+                var headerOffset = 110;
             } else if (mq600.matches) {
-                var headerOffset = 115;
+                var headerOffset = 105;
             }
         };
         var offsetPosition = elementPosition - headerOffset;

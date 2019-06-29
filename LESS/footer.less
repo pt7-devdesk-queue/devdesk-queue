@@ -13,9 +13,16 @@ footer {
             font-size: 1rem;
             white-space: nowrap;
             color: rgb(0, 45, 87);
+            font-family: @ubuntu;
+            transition: .3s;
 
             @media @mobile600 {
                 font-size: .8rem;
+            }
+
+            &:hover {
+                color: rgb(72, 117, 160);
+                transform: scale(1.05);
             }
         }
     }
@@ -26,6 +33,7 @@ footer {
         text-align: center;
         padding: 15px 0px;
         font-size: .80rem;
+        font-family: @bitter;
 
         @media @mobile600 {
             font-size: .65rem;
