@@ -688,25 +688,29 @@ body {
   justify-content: center;
   align-items: center;
   height: 50px;
+  width: auto;
   margin-top: -90px;
+  animation: ArrowMovements 0.5s ease-in-out infinite alternate;
 }
-.bottom-arrows img,
-.bottom-arrows div {
+.bottom-arrows img {
   height: 100%;
   width: auto;
   font-family: 'Ubuntu', sans-serif;
   user-select: none;
 }
-.bottom-arrows #first-arrow {
-  font-size: 3rem;
-}
 .bottom-arrows #second-arrow {
   margin-top: -35px;
-  font-size: 4em;
 }
 .bottom-arrows #third-arrow {
   margin-top: -35px;
-  font-size: 5rem;
+}
+@keyframes ArrowMovements {
+  0% {
+    margin-top: -90px;
+  }
+  100% {
+    margin-top: -100px;
+  }
 }
 .solutions-heading {
   background: url(../assets/building.jpg);
