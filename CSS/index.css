@@ -706,7 +706,7 @@ body {
   user-select: none;
 }
 .bottom-arrows #first-arrow {
-  filter: invert(50%) sepia(100%) hue-rotate(190deg) saturate(500%);
+  animation: firstArrowWhiten 1.2s linear infinite;
 }
 .bottom-arrows #second-arrow {
   margin-top: -35px;
@@ -730,7 +730,7 @@ body {
     filter: invert(0%);
   }
   25% {
-    filter: invert(100%);
+    filter: invert(50%) sepia(100%) hue-rotate(190deg) saturate(500%);
   }
 }
 @keyframes secondArrowWhiten {
@@ -739,7 +739,7 @@ body {
     filter: invert(0%);
   }
   50% {
-    filter: invert(100%);
+    filter: invert(50%) sepia(100%) hue-rotate(190deg) saturate(500%);
   }
 }
 @keyframes thirdArrowWhiten {
@@ -748,7 +748,7 @@ body {
     filter: invert(0%);
   }
   75% {
-    filter: invert(100%);
+    filter: invert(50%) sepia(100%) hue-rotate(190deg) saturate(500%);
   }
 }
 .solutions-heading {
