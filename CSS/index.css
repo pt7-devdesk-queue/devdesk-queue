@@ -122,6 +122,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.black-to-blue-image {
+  filter: invert(50%) sepia(100%) hue-rotate(190deg) saturate(500%);
+}
 *,
 :before,
 :after {
@@ -694,7 +697,7 @@ body {
   align-items: center;
   height: 50px;
   width: auto;
-  animation: ArrowMovements 0.5s ease-in-out infinite alternate;
+  animation: ArrowMovements 0.6s ease-in-out infinite alternate;
 }
 .bottom-arrows img {
   height: 100%;
@@ -702,11 +705,16 @@ body {
   font-family: 'Ubuntu', sans-serif;
   user-select: none;
 }
+.bottom-arrows #first-arrow {
+  filter: invert(50%) sepia(100%) hue-rotate(190deg) saturate(500%);
+}
 .bottom-arrows #second-arrow {
   margin-top: -35px;
+  animation: secondArrowWhiten 1.2s linear infinite;
 }
 .bottom-arrows #third-arrow {
   margin-top: -35px;
+  animation: thirdArrowWhiten 1.2s linear infinite;
 }
 @keyframes ArrowMovements {
   0% {
@@ -714,6 +722,33 @@ body {
   }
   100% {
     bottom: 20px;
+  }
+}
+@keyframes firstArrowWhiten {
+  0%,
+  100% {
+    filter: invert(0%);
+  }
+  25% {
+    filter: invert(100%);
+  }
+}
+@keyframes secondArrowWhiten {
+  0%,
+  100% {
+    filter: invert(0%);
+  }
+  50% {
+    filter: invert(100%);
+  }
+}
+@keyframes thirdArrowWhiten {
+  0%,
+  100% {
+    filter: invert(0%);
+  }
+  75% {
+    filter: invert(100%);
   }
 }
 .solutions-heading {

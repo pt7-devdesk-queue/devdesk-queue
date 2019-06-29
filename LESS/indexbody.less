@@ -330,8 +330,7 @@
     align-items: center;
     height: 50px;
     width: auto;
-    // margin-top: -90px;
-    animation: ArrowMovements .5s ease-in-out infinite alternate;
+    animation: ArrowMovements .6s ease-in-out infinite alternate;
 
     img {
         height: 100%;
@@ -340,20 +339,56 @@
         user-select: none;
     }
 
+    #first-arrow {
+        .black-to-blue-image();
+        // animation: firstArrowWhiten 1.2s linear infinite;
+    }
+
     #second-arrow {
         margin-top: -35px;
+        animation: secondArrowWhiten 1.2s linear infinite;
     }
 
     #third-arrow {
         margin-top: -35px;
+        animation: thirdArrowWhiten 1.2s linear infinite;
     }
 }
 
 @keyframes ArrowMovements {
     0% {
         bottom: 30px;
+
     }
     100% {
         bottom: 20px;
+
+    }
+}
+
+@keyframes firstArrowWhiten {
+    0%, 100% {
+        filter: invert(0%);
+    }
+    25% {
+        filter: invert(100%);
+    }
+}
+
+@keyframes secondArrowWhiten {
+    0%, 100% {
+        filter: invert(0%);
+    }
+    50% {
+        filter: invert(100%);
+    }
+}
+
+@keyframes thirdArrowWhiten {
+    0%, 100% {
+        filter: invert(0%);
+    }
+    75% {
+        filter: invert(100%);
     }
 }
