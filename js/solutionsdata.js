@@ -63,3 +63,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//If window is opened under 850px, display all boxes
+const allBoxesMobile = document.querySelectorAll('.box-card');
+if (window.innerWidth <= 850) {
+    allBoxesMobile.forEach(box => {
+        box.style.display = "block";
+    });
+}
