@@ -12,10 +12,15 @@
     <script>
         document.addEventListener("scroll", () => {
             const whatWeDo = document.querySelector('#what-we-do-appear-hide');
+            const bottomArrows = document.querySelector('#moving-arrows');
             if (this.scrollY >= 1) {
+                bottomArrows.classList.add('bottom-arrows-disappear');
+                bottomArrows.classList.remove('bottom-arrows');
                 whatWeDo.classList.remove('what-we-do-hidden');
                 whatWeDo.classList.add('what-we-do');
             } else {
+                bottomArrows.classList.remove('bottom-arrows-disappear');
+                bottomArrows.classList.add('bottom-arrows');
                 whatWeDo.classList.remove('what-we-do');
                 whatWeDo.classList.add('what-we-do-hidden');
             }
@@ -49,7 +54,7 @@
                 <a href="./pages/demo.html">Request a Demo</a>
             </div>
         </section>
-        <div class="bottom-arrows">
+        <div class="bottom-arrows" id="moving-arrows">
             <img src="assets/BottomArrow.png" id="first-arrow">
             <img src="assets/BottomArrow.png" id="second-arrow">
             <img src="assets/BottomArrow.png" id="third-arrow">

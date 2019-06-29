@@ -682,14 +682,18 @@ body {
     font-size: 1.15rem;
   }
 }
+.bottom-arrows-disappear {
+  display: none;
+}
 .bottom-arrows {
+  position: fixed;
+  bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: auto;
-  margin-top: -90px;
   animation: ArrowMovements 0.5s ease-in-out infinite alternate;
 }
 .bottom-arrows img {
@@ -706,10 +710,10 @@ body {
 }
 @keyframes ArrowMovements {
   0% {
-    margin-top: -90px;
+    bottom: 30px;
   }
   100% {
-    margin-top: -100px;
+    bottom: 20px;
   }
 }
 .solutions-heading {
