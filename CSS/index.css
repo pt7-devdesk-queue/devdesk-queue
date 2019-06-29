@@ -424,9 +424,24 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
+  .main-page-greeting .top-content h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 650px) {
   .main-page-greeting .top-content h2 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 550px) {
+  .main-page-greeting .top-content h2 {
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-page-greeting .top-content h2 {
+    padding-top: 25px;
   }
 }
 .main-page-greeting .top-content p {
@@ -442,6 +457,11 @@ body {
 @media (max-width: 550px) {
   .main-page-greeting .top-content p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-page-greeting .top-content p {
+    width: 90%;
   }
 }
 .main-page-greeting .top-content a {
@@ -623,6 +643,11 @@ body {
 @media (max-width: 600px) {
   .customer-review-bottom-index h4 {
     font-size: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .customer-review-bottom-index h4 {
+    font-size: 1rem;
   }
 }
 .customer-review-bottom-index a {
