@@ -8,6 +8,24 @@
     <title>Dev Desk</title>
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Bitter|Roboto+Slab|Ubuntu&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("scroll", () => {
+            const whatWeDo = document.querySelector('#what-we-do-appear-hide');
+            const bottomArrows = document.querySelector('#moving-arrows');
+            if (this.scrollY >= 1) {
+                bottomArrows.classList.add('bottom-arrows-disappear');
+                bottomArrows.classList.remove('bottom-arrows');
+                whatWeDo.classList.remove('what-we-do-hidden');
+                whatWeDo.classList.add('what-we-do');
+            } else {
+                bottomArrows.classList.remove('bottom-arrows-disappear');
+                bottomArrows.classList.add('bottom-arrows');
+                whatWeDo.classList.remove('what-we-do');
+                whatWeDo.classList.add('what-we-do-hidden');
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -33,12 +51,15 @@
                     tenetur corrupti recusandae beatae eos cum! Eaque, ab ad voluptatem nulla magnam totam commodi
                     consectetur!</p>
 
-                <a href="/pages/demo.html">
-                    <button>Request a Demo</button>
-                </a>
+                <a href="./pages/demo.html">Request a Demo</a>
             </div>
         </section>
-        <div class="what-we-do">
+        <div class="bottom-arrows" id="moving-arrows">
+            <img src="assets/BottomArrow.png" id="first-arrow">
+            <img src="assets/BottomArrow.png" id="second-arrow">
+            <img src="assets/BottomArrow.png" id="third-arrow">
+        </div>
+        <div class="what-we-do-hidden" id="what-we-do-appear-hide">
             <h2>What We Do</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nihil voluptatem, illum nisi quod
                 exercitationem mollitia enim eaque, et quia veritatis autem, eos consequuntur impedit assumenda nulla in
@@ -83,13 +104,17 @@
                 delectus alias laudantium. Saepe quos natus nemo illo hic sit nulla iusto dicta. Nulla aliquam
                 necessitatibus ratione qui.</p>
         </section>
-
+        <div class="customer-review-bottom-index">
+            <h4>WHAT OUR CUSTOMERS ARE SAYING</h4>
+            <a href="./pages/testimonials.html">Testimonials</a>
+        </div>
     </div>
     <footer>
         <nav class="footer-nav">
             <a href="./index.html">Home</a>
             <a href="./pages/solutions.html">Solutions</a>
             <a href="./pages/demo.html">Request a Demo</a>
+            <a href="./pages/testimonials.html">Testimonials</a>
         </nav>
         <div class="small-footer">
             <p>Copyright © 2019 DevDesk LLC. All rights reserved</p>
@@ -97,6 +122,22 @@
     </footer>
 
     <script type="text/javascript" src="./js/javascript.js"></script>
+    <script>
+        const scrollingArrows = document.querySelector('.bottom-arrows');
+        scrollingArrows.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var element = document.querySelector('.main-page-greeting');
+            var elementPosition = element.getBoundingClientRect().bottom;
+            var headerOffset = 300;
+            var offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 
 </html>

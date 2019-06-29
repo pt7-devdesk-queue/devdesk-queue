@@ -1,0 +1,412 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-page-greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../assets/blur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    @media @tablet1000 {
+        padding: 150px 6%;
+    }
+
+    @media @mobile600 {
+        padding: 100px 6%;
+    }
+
+
+    .top-content {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media @tablet1000 {
+            width: 90%;
+        }
+
+        h2 {
+            font-size: 4rem;
+            font-family: @bitter;
+            white-space: nowrap;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+
+            @media @tablet1000 {
+                white-space: normal;
+                text-align: center;
+            }
+
+            @media @tablet750 {
+                font-size: 3.5rem;
+            }
+
+            @media @mobile650 {
+                font-size: 3rem;
+            }
+
+            @media @mobile550 {
+                font-size: 2.75rem;
+            }
+            @media @mobile500 {
+                padding-top: 25px;
+            }
+        }
+
+        p {
+            width: 75%;
+            padding: 20px 0px;
+            font-size: 1.25rem;
+            line-height: 25px;
+            text-align: center;
+            font-family: @ubuntu;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+
+            @media @mobile550 {
+                font-size: 1rem;
+            }
+
+            @media @mobile500 {
+                width: 90%;
+            }
+        }
+
+        a {
+            font-size: 1rem;
+            padding: 9px 16px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: whitesmoke;
+            background: rgba(103, 113, 255, 0.7);
+            cursor: pointer;
+            box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+            transition: ease-in-out 0.2s;
+            font-family: @roboto;
+
+            &:hover {
+                box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+                color: white;
+                background: rgba(103, 113, 255, 0.95);
+            }
+        }
+    }
+}
+
+.what-we-do {
+    width: 50%;
+    padding: 40px 2%;
+    margin-top: -100px;
+    border-radius: 25px 0px 25px 0px;
+    background: white;
+    box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
+    z-index: 2;
+
+    @media @tablet1000 {
+        width: 90%;
+    }
+
+    @media @mobile650 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        padding-bottom: 20px;
+        font-family: @bitter;
+
+        @media @mobile550 {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-family: @ubuntu;
+
+        @media @mobile550 {
+            font-size: 1.15rem;
+        }
+    }
+
+}
+
+.team-management {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    padding: 25px 0px 0px;
+
+    @media @tablet1000 {
+        width: 90%;
+    }
+
+    @media @mobile650 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teamwork {
+        width: 45%;
+        padding: 20px 0px 0px;
+
+        @media @mobile650 {
+            width: 100%;
+            text-align: center
+        }
+
+        h3 {
+            font-size: 1.65rem;
+            padding-bottom: 15px;
+            font-family: @bitter;
+
+            @media @mobile550 {
+                font-size: 1.4rem;
+            }
+        }
+
+        p {
+            font-size: 1.15rem;
+            padding: 15px 0px;
+            font-family: @ubuntu;
+            line-height: 25px;
+
+            @media @mobile550 {
+                font-size: 1rem;
+            }
+        }
+
+        p:nth-child(odd) {
+            border-top: 1px dashed slateblue;
+            border-bottom: 1px dashed slateblue;
+        }
+    }
+}
+
+
+.bottom-image {
+    background: url(../assets/teams.jpg);
+    padding: 150px;
+    margin: 30px 0px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 50vw;
+    background-position: center;
+    width: 75%;
+    height: auto;
+    border-radius: 0px 25px 0px 25px;
+
+    @media @tablet1000 {
+        width: 90%;
+        background-size: auto 75vw;
+    }
+}
+
+.solve-your-issues {
+    width: 75%;
+    padding: 0px 40px 25px;
+
+    @media @tablet1000 {
+        width: 90%;
+        padding: 0px;
+    }
+
+    @media @mobile650 {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+        padding-bottom: 15px;
+        font-family: @bitter;
+
+        @media @mobile550 {
+            font-size: 1.4rem;
+        }
+    }
+
+    p {
+        font-size: 1.15rem;
+        padding: 15px 0px 25px;
+        font-family: @ubuntu;
+        line-height: 25px;
+
+        @media @mobile550 {
+            font-size: 1rem;
+        }
+    }
+}
+
+.customer-review-bottom-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(-90deg, #331E38, #EF626C, #331E38);
+
+    h4 {
+        padding: 15px;
+        font-size: 1.5rem;
+        color: white;
+        font-family: @bitter;
+
+        @media @mobile600 {
+            font-size: 1.25rem;
+        }
+
+        @media @mobile500 {
+            font-size: 1rem;
+        }
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 9px 16px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: whitesmoke;
+        background: rgba(103, 113, 255, 0.7);
+        cursor: pointer;
+        box-shadow: 1px 3px 4px 1px rgba(42, 42, 42, 0.6);
+        transition: ease-in-out 0.2s;
+        font-family: @roboto;
+
+        &:hover {
+            box-shadow: 0 0 0 0.01px rgba(42, 42, 42, 0.6);
+            color: white;
+            background: rgba(103, 113, 255, 0.95);
+        }
+    }
+}
+
+#what-we-do-appear-hide {
+    transition: .3s;
+}
+
+.what-we-do-hidden {
+    width: 50%;
+    padding: 40px 2%;
+    margin-top: 100px;
+    border-radius: 25px 0px 25px 0px;
+    background: white;
+    box-shadow: 0 2px 5px 1px rgba(34, 34, 34, 0.56);
+    z-index: 2;
+
+    @media @tablet1000 {
+        width: 90%;
+    }
+
+    @media @mobile650 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        padding-bottom: 20px;
+        font-family: @bitter;
+
+        @media @mobile550 {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-family: @ubuntu;
+
+        @media @mobile550 {
+            font-size: 1.15rem;
+        }
+    }
+
+}
+
+.bottom-arrows-disappear {
+    display: none;
+}
+
+.bottom-arrows {
+    position: fixed;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    animation: ArrowMovements .6s ease-in-out infinite alternate;
+
+    img {
+        height: 100%;
+        width: auto;
+        font-family: @ubuntu;
+        user-select: none;
+    }
+
+    #first-arrow {
+        animation: firstArrowWhiten 1.2s linear infinite;
+    }
+
+    #second-arrow {
+        margin-top: -35px;
+        animation: secondArrowWhiten 1.2s linear infinite;
+    }
+
+    #third-arrow {
+        margin-top: -35px;
+        animation: thirdArrowWhiten 1.2s linear infinite;
+    }
+}
+
+@keyframes ArrowMovements {
+    0% {
+        bottom: 30px;
+
+    }
+    100% {
+        bottom: 20px;
+
+    }
+}
+
+@keyframes firstArrowWhiten {
+    0%, 100% {
+        filter: invert(0%);
+    }
+    25% {
+        .black-to-blue-image();
+    }
+}
+
+@keyframes secondArrowWhiten {
+    0%, 100% {
+        filter: invert(0%);
+    }
+    50% {
+        .black-to-blue-image();
+    }
+}
+
+@keyframes thirdArrowWhiten {
+    0%, 100% {
+        filter: invert(0%);
+    }
+    75% {
+        .black-to-blue-image();
+    }
+}

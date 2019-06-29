@@ -17,8 +17,8 @@ class BoxLink {
 }
 //If the window is not below 850px width, dataset comes into play and allows changing
 const mq850 = window.matchMedia("(max-width: 850px)");
+let boxes = document.querySelectorAll('.solution-box');
 if (!mq850.matches) {
-    let boxes = document.querySelectorAll('.solution-box');
     boxes.forEach(box => new BoxLink(box));
 }
 
@@ -32,6 +32,7 @@ window.addEventListener('resize', () => {
     } else if (this.innerWidth > 850) {
         boxColumn.forEach(box => {
             box.style.display = "";
+            boxes.forEach(box => new BoxLink(box));
         });
     }
 });
@@ -49,9 +50,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             var headerOffset = 100;
         } else if (mq850.matches) {
             if (!mq600.matches) {
-                var headerOffset = 140;
+                var headerOffset = 110;
             } else if (mq600.matches) {
-                var headerOffset = 115;
+                var headerOffset = 105;
             }
         };
         var offsetPosition = elementPosition - headerOffset;
@@ -62,3 +63,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//If window is opened under 850px, display all boxes
+const allBoxesMobile = document.querySelectorAll('.box-card');
+if (window.innerWidth <= 850) {
+    allBoxesMobile.forEach(box => {
+        box.style.display = "block";
+    });
+}
