@@ -133,6 +133,18 @@ table {
 body {
   font-size: 62.5%;
 }
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #666666;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #4f7cdd;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #7a99d9), color-stop(0.72, #497dbd));
+}
 .header-container {
   position: fixed;
   width: 100%;
