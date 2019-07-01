@@ -1099,6 +1099,13 @@ body::-webkit-scrollbar-thumb {
   background-size: auto 100vw;
   background-position: 100% 25%;
 }
+@media (max-width: 600px) {
+  .demo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .demo-header {
   color: white;
   font-size: 1.5rem;
@@ -1106,6 +1113,12 @@ body::-webkit-scrollbar-thumb {
   margin-top: 10px;
   padding-left: 150px;
   text-shadow: 2px 2px 4px black;
+}
+@media (max-width: 600px) {
+  .demo-header {
+    display: block;
+    padding-left: 0px;
+  }
 }
 .demo-header a {
   text-decoration: none;
@@ -1123,6 +1136,11 @@ body::-webkit-scrollbar-thumb {
   color: white;
   text-shadow: 2px 2px 4px black;
 }
+@media (max-width: 600px) {
+  .demo-request-top {
+    display: block;
+  }
+}
 .demo-request-top .demo-first {
   width: 51%;
 }
@@ -1137,21 +1155,55 @@ body::-webkit-scrollbar-thumb {
   color: white;
   text-shadow: 2px 2px 4px black;
 }
+@media (max-width: 600px) {
+  .demo-content {
+    padding-left: 0px;
+    display: block;
+    text-align: center;
+  }
+}
 .demo-content .demo-features {
   font-size: 1.5rem;
   width: 49%;
   line-height: 25px;
   margin-top: 40px;
 }
+@media (max-width: 600px) {
+  .demo-content .demo-features {
+    text-align: left;
+  }
+}
+@media (max-width: 600px) {
+  .demo-content .demo-features {
+    width: 100%;
+  }
+}
 .demo-content .demo-features h3 {
   line-height: 1;
   margin-bottom: 25px;
 }
+@media (max-width: 600px) {
+  .demo-content .demo-features h3 {
+    font-size: 1.5rem;
+  }
+}
 .demo-content .demo-features p {
   line-height: 55px;
 }
+@media (max-width: 600px) {
+  .demo-content .demo-features p {
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+}
 .demo-content .demo-features .demo-cta {
   font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+  .demo-content .demo-features .demo-cta {
+    font-size: 1.4rem;
+    line-height: 25px;
+  }
 }
 .demo-content .demo-form {
   font-size: 1rem;
@@ -1164,6 +1216,12 @@ body::-webkit-scrollbar-thumb {
   margin-top: 15px;
   margin-bottom: 2px;
 }
+@media (max-width: 600px) {
+  .demo-content .demo-form p {
+    font-size: 2rem;
+    margin-top: 25px;
+  }
+}
 .demo-content .demo-form .nameError {
   font-size: 0.5rem;
   color: chartreuse;
@@ -1171,19 +1229,38 @@ body::-webkit-scrollbar-thumb {
 .demo-content .demo-form input {
   height: 35px;
   width: 200px;
-  font-size: 1rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 600px) {
+  .demo-content .demo-form input {
+    width: 500px;
+    height: 70px;
+    font-size: 2rem;
+  }
 }
 .demo-content .demo-form button {
   margin-top: 25px;
   width: 200px;
   height: 35px;
   background-color: chartreuse;
-  margin-bottom: 71px;
+  margin-bottom: 75px;
+}
+@media (max-width: 600px) {
+  .demo-content .demo-form button {
+    margin-top: 35px;
+    width: 500px;
+    height: 70px;
+  }
 }
 .demo-content .demo-form .error {
   color: chartreuse;
   margin-top: 0px;
   font-size: 0.7rem;
+}
+@media (max-width: 600px) {
+  .demo-content .demo-form .error {
+    font-size: 1.2rem;
+  }
 }
 .demo-content .demo-form .hidden {
   display: none;
@@ -1236,10 +1313,24 @@ body::-webkit-scrollbar-thumb {
   right: 25px;
   transform: translate(0, -50%);
 }
+@media (max-width: 600px) {
+  .carousel {
+    margin-left: 20px;
+    width: 560px;
+    height: 400px;
+  }
+}
 .testimonials {
   background: url(../assets/blur.jpg);
   background-repeat: no-repeat;
   background-size: auto 100vw;
+}
+@media (max-width: 600px) {
+  .testimonials {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .testimonials-header {
   font-size: 1.5rem;
@@ -1247,6 +1338,12 @@ body::-webkit-scrollbar-thumb {
   padding-left: 150px;
   color: white;
   text-shadow: 2px 2px 4px black;
+}
+@media (max-width: 600px) {
+  .testimonials-header {
+    padding-left: 0px;
+    font-size: 2.5rem;
+  }
 }
 .testimonials-header a {
   text-decoration: none;
@@ -1256,14 +1353,29 @@ body::-webkit-scrollbar-thumb {
   font-size: 2rem;
   padding-bottom: 20px;
 }
+@media (max-width: 600px) {
+  .testimonials-header h1 {
+    font-size: 3rem;
+  }
+}
 .testimonials-header p {
   line-height: 30px;
+}
+@media (max-width: 600px) {
+  .testimonials-header p {
+    font-size: 2.2rem;
+  }
 }
 .card {
   padding-left: 170px;
   width: 600px;
   color: white;
   text-shadow: 2px 2px 4px black;
+}
+@media (max-width: 600px) {
+  .card {
+    display: block;
+  }
 }
 .card img {
   display: inline-block;
@@ -1272,10 +1384,19 @@ body::-webkit-scrollbar-thumb {
   height: 200px;
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  .card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+}
 .card .headline {
   font-size: 2rem;
   padding-bottom: 25px;
   vertical-align: justify;
+  margin-left: -50px;
 }
 .card .test p {
   font-size: 1.5rem;
@@ -1283,8 +1404,18 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 25px;
   vertical-align: middle;
 }
+@media (max-width: 600px) {
+  .card .test p {
+    margin-left: -80px;
+  }
+}
 .card .author {
   font-size: 1.8rem;
+}
+@media (max-width: 600px) {
+  .card .author {
+    margin-left: 45px;
+  }
 }
 footer {
   background: #8294a5;

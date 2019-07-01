@@ -7,7 +7,7 @@ class Carousel {
         this.currentIndex = 0;
         this.right.addEventListener('click', this.next.bind(this));
         this.left.addEventListener('click', this.next.bind(this));        
-        this.card[this.currentIndex].style.display = 'block';
+        this.card[this.currentIndex].style.display = 'block';        
     }
 
     next() {
@@ -22,3 +22,7 @@ class Carousel {
 let carousel = document.querySelector('.carousel');
 
 let createCarousel = new Carousel(carousel);
+
+//fix two cards showing up on load
+const button = document.querySelector('.left-button');
+button.addEventListener('load',button.click());

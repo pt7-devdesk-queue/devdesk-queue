@@ -6,10 +6,14 @@
     background-repeat: no-repeat;
     background-size: auto 100vw;
     background-position: 100% 25%; 
+
+    @media @mobile600 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
    
 }
-
-
 
 .demo-header {
     color: white;
@@ -19,6 +23,12 @@
     padding-left: 150px; 
     text-shadow: 2px 2px 4px black;
     
+    
+    @media @mobile600 {
+        display: block;
+        padding-left: 0px;
+    }
+    
     a{
         text-decoration: none;
     }
@@ -26,11 +36,14 @@
     h1 {        
         font-size: 2rem;
         color: white;
-        padding-bottom: 20px;                       
+        padding-bottom: 20px;  
+        
+        
     }
 
     p {
         line-height: 30px;
+        
     }
 }
 
@@ -38,6 +51,11 @@
     display: flex;       
     color: white;
     text-shadow: 2px 2px 4px black; 
+    
+    
+    @media @mobile600 {
+        display: block;
+    }
 
     .demo-first {
         width: 51%;
@@ -55,25 +73,52 @@
     display:flex;
     padding-left: 150px; 
     color: white;
-    text-shadow: 2px 2px 4px black;      
+    text-shadow: 2px 2px 4px black;  
+    
+    @media @mobile600 {
+        padding-left: 0px;
+        display: block;
+        text-align: center;
+    }
 
     .demo-features {        
         font-size: 1.5rem;    
         width: 49%;
         line-height: 25px; 
         margin-top: 40px;
+        @media @mobile600 {
+            text-align: left;
+        }
+
+        @media @mobile600 {
+            width: 100%;
+
+        }
 
         h3 {
             line-height: 1;
             margin-bottom: 25px;
+
+            @media @mobile600 {
+                font-size: 1.5rem;                
+
+            }
         }
 
         p{
             line-height: 55px;
+            @media @mobile600 {
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
         }
 
         .demo-cta {
-            font-size: 0.9rem;        
+            font-size: 0.9rem;
+            @media @mobile600 {
+                font-size: 1.4rem;
+                line-height: 25px;
+            }        
             
         }
 
@@ -89,7 +134,13 @@
             font-size: 1.0rem;
             font-weight: 300;
             margin-top: 15px;
-            margin-bottom: 2px;
+            margin-bottom: 2px;            
+
+            @media @mobile600 {
+                font-size: 2.0rem;
+                margin-top: 25px;
+                
+            }
         }  
         
         .nameError {
@@ -101,7 +152,13 @@
         input {
             height: 35px;
             width: 200px;
-            font-size: 1.0rem;
+            font-size: 1.6rem;  
+            @media @mobile600 {
+                width: 500px;
+                height: 70px;
+                font-size: 2.0rem;
+                
+            }          
         }
 
         button {
@@ -109,13 +166,21 @@
              width: 200px;
              height: 35px;
              background-color: chartreuse;
-             margin-bottom: 71px;
+             margin-bottom: 75px;
+             @media @mobile600 {
+                 margin-top: 35px;
+                 width: 500px;
+                 height: 70px;
+             }
         }
 
         .error {
             color: chartreuse;
             margin-top: 0px;
             font-size: 0.7rem;
+            @media @mobile600{
+                font-size: 1.2rem;
+            }
         }
 
         .hidden {
@@ -125,7 +190,6 @@
     }
 
 }
-
 
 
 
